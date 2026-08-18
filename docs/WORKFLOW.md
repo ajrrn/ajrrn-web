@@ -1,7 +1,10 @@
 # Editing workflow
 
-Every change to the site — a new announcement, a fixed typo, a new page —
-follows the same path:
+`main` is protected by a GitHub ruleset ("Protect main"): changes reach it
+only through a pull request whose checks pass; force-pushes and deletion are
+blocked. Merging into `main` deploys to production. Every change to the site
+— a new announcement, a fixed typo, a new page — therefore follows the same
+path:
 
 1. **Create a branch** from `main` (for example `news/2026-10-webinar`).
 2. **Edit or add markdown files** under `src/content/` (see
@@ -14,10 +17,17 @@ follows the same path:
      URL** (shown in the Cloudflare dashboard and in the commit status). On
      preview URLs the languages live in the path:
      `https://<preview>.workers.dev/en/`, `/fr/`, `/es/`, `/ar/`.
-4. **Open a pull request** into `main`. Review the preview.
+4. **Open a pull request** into `main`. Review the preview. The PR can be
+   merged once both required checks are green: `check` (GitHub Actions) and
+   `Workers Builds: ajrrn-web` (Cloudflare preview build). No second reviewer
+   is required at the moment (required approvals = 0).
 5. **Merge.** Cloudflare builds `main` and deploys to production
    (`ajrrn.org`, `fr.ajrrn.org`, `es.ajrrn.org`, `ar.ajrrn.org`) within a
-   minute or two.
+   minute or two. Delete the branch afterwards.
+
+Note: the ruleset currently lets *organization admins* bypass it, so an admin
+can still push straight to `main` (GitHub records the bypass). Please don't —
+use a PR anyway. The ruleset lives under *Settings → Rules → Rulesets*.
 
 ## Local preview (optional)
 

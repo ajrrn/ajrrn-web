@@ -35,11 +35,17 @@ This is the AJRRN website: Eleventy static site + Cloudflare Worker. Read
 - Don't commit `initial_docs/`, `initial_instructions.md`, `_site/`, `screenshots/`
   (all in `.gitignore`).
 
-## Deployment
+## Deployment and git workflow
 
-Live since 2026-08-18: pushes to `main` deploy to ajrrn.org (+ fr/es/ar) via
-Cloudflare Workers Builds; other branches get preview URLs. After changing the
-Worker or wrangler.jsonc, run `bash scripts/smoke-production.sh`.
+Live since 2026-08-18: `main` deploys to ajrrn.org (+ fr/es/ar) via Cloudflare
+Workers Builds; other branches get preview URLs. `main` is protected by a
+ruleset — **never push to `main` directly** (an org-admin token could bypass
+it; don't). Work on a branch, push it, open a PR with `gh pr create`, and
+leave the PR for the user to review and merge unless they ask you to merge it
+once the `check` and `Workers Builds: ajrrn-web` checks are green. After
+changing the Worker or wrangler.jsonc, run `bash scripts/smoke-production.sh`
+once it is deployed. The repository is public: don't commit drafts of
+embargoed announcements before their publication date.
 
 ## Handy commands
 
