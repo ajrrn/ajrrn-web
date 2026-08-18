@@ -125,6 +125,16 @@ not count; page views do. If traffic grows past that, upgrade the account to
 Workers Paid (US$5/month) — no code change needed. Workers Builds is free
 within its build-minute limits.
 
+## After it is live
+
+`scripts/smoke-production.sh` (run from a laptop: `bash scripts/smoke-production.sh`)
+checks the hostnames, redirects, 404 handling, language and production link
+mode in one go. Run it after any change to `wrangler.jsonc` or the Worker.
+
+Cloudflare's *managed robots.txt* (zone setting) prepends rules that block AI
+crawlers to the site's own `robots.txt`; search engines are unaffected. Toggle
+it in the zone's Bots / AI Crawl Control settings.
+
 ## Troubleshooting
 
 - **Build fails with `EBADENGINE` / Node version**: `.node-version` pins Node 22;

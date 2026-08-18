@@ -38,4 +38,5 @@ npm run test:screenshots   # writes phone/tablet/desktop screenshots to ./screen
 ```
 
 The link checker also fails if a page exists in English but is missing in
-another language.
+another language. After a production deploy, `bash scripts/smoke-production.sh`
+verifies the live hostnames.

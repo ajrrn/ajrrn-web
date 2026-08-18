@@ -63,8 +63,9 @@ wrangler.jsonc          Cloudflare Workers configuration
 
 ## Status (2026-08-18)
 
-First version complete and pushed; Cloudflare not yet connected (see
-`docs/CLOUDFLARE-SETUP.md`). Real content so far: home, About, People (3
+First version live at ajrrn.org (+ fr/es/ar subdomains) via Cloudflare
+Workers Builds; `main` deploys to production, other branches get preview URLs
+(`scripts/smoke-production.sh` checks the live site). Real content so far: home, About, People (3
 staff), Partners (3), Projects page text, Contact, Privacy policy (draft), one
 news item (SSHRC grant), one event (launch, 22 Sept 2026). Publications,
 opportunities and project *entries* are still sample placeholders — see

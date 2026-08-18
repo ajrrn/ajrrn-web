@@ -35,6 +35,12 @@ This is the AJRRN website: Eleventy static site + Cloudflare Worker. Read
 - Don't commit `initial_docs/`, `initial_instructions.md`, `_site/`, `screenshots/`
   (all in `.gitignore`).
 
+## Deployment
+
+Live since 2026-08-18: pushes to `main` deploy to ajrrn.org (+ fr/es/ar) via
+Cloudflare Workers Builds; other branches get preview URLs. After changing the
+Worker or wrangler.jsonc, run `bash scripts/smoke-production.sh`.
+
 ## Handy commands
 
 ```

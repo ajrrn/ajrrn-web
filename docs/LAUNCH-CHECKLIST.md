@@ -17,9 +17,9 @@ before (or soon after) the site goes public. Last reviewed 2026-08-18.
 - [ ] Logo usage in the header on Arabic pages: the logo wordmark is English; consider adding an Arabic wordmark image later.
 
 ## Technical
-- [ ] Cloudflare setup complete (docs/CLOUDFLARE-SETUP.md), all five hostnames working with HTTPS.
+- [x] Cloudflare setup complete (docs/CLOUDFLARE-SETUP.md); all five hostnames verified live 2026-08-18 (`scripts/smoke-production.sh`).
 - [ ] Branch protection on `main`.
 - [ ] Ask the designer for native SVG exports of the logo (colour and white, text as outlines) and a square mark for the favicon; replace `src/assets/img/ajrrn-logo-colour.svg` (see docs/DESIGN.md).
 - [ ] Open Graph image (`src/assets/img/og-image.png`) — replace with a designed one if desired.
-- [ ] Verify search engines: production `robots.txt` allows crawling; each language's `sitemap.xml` is listed there.
+- [x] Production `robots.txt` allows crawling and lists each language's sitemap. Note: the Cloudflare zone has *managed robots.txt* on, which prepends rules blocking AI crawlers (GPTBot, ClaudeBot, CCBot, Google-Extended, …) — change under the zone's Bots / AI Crawl Control settings if you want otherwise.
 - [ ] Optional: email/newsletter, social links — the site intentionally has none; decide whether to add plain links (no embeds).
