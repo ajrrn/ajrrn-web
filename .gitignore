@@ -1,0 +1,20 @@
+# Local working files (not part of the website)
+claude/
+.CLAUDE.md
+.env
+.env.*
+initial_docs/
+initial_instructions.md
+
+# Build output and dependencies
+node_modules/
+_site/
+.wrangler/
+.dev.vars
+screenshots/
+
+# Editors / OS
+.DS_Store
+.vscode/
+.idea/
+*.log

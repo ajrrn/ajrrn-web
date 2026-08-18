@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+---
+{#- Dispatching layout: pick a view based on the computed `kind` of the page. -#}
+{%- set s = strings[lang] -%}
+{%- if kind == "home" -%}
+  {% include "views/home.njk" %}
+{%- elif kind == "notfound" -%}
+  {% include "views/notfound.njk" %}
+{%- elif kind | startsWith("list-") -%}
+  {% include "views/list.njk" %}
+{%- elif kind | startsWith("item-") -%}
+  {% include "views/item.njk" %}
+{%- else -%}
+  {% include "views/page.njk" %}
+{%- endif -%}

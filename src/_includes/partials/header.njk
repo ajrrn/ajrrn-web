@@ -1,0 +1,29 @@
+{%- set s = strings[lang] -%}
+{%- set nav = navigation[lang] -%}
+{%- set alternates = collections.translations[translationKey] -%}
+{%- set homeUrl = ("/" + lang + "/") | href(lang) -%}
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ homeUrl }}" aria-label="{{ s.full_name }} — {{ s.ui.home }}">
+      <img src="/assets/img/ajrrn-logo-colour.png" alt="{{ s.full_name }}" width="420" height="200" class="brand-logo" decoding="async">
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden>
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+      <span class="nav-toggle-label">{{ s.ui.menu }}</span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="{{ s.ui.menu }}">
+      <ul class="nav-list">
+        {%- for item in nav.main %}
+        <li><a href="{{ item.url | href(lang) }}"{% if item | isActive(page.url, lang) %} aria-current="{% if page.url == item.url %}page{% else %}true{% endif %}"{% endif %}>{{ item.label }}</a></li>
+        {%- endfor %}
+      </ul>
+      <ul class="lang-list" aria-label="{{ s.ui.language }}">
+        {%- for l in site.languages %}
+        {%- set alt = alternates[l.code] if alternates else null %}
+        {%- set target = alt.url if alt else ("/" + l.code + "/") %}
+        <li><a href="{{ target | href(lang) }}" lang="{{ l.code }}" hreflang="{{ l.code }}"{% if l.code == lang %} aria-current="true"{% endif %}>{{ l.name }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

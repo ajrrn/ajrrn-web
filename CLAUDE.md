@@ -1,0 +1,37 @@
+# Notes for Claude Code (and other AI assistants) working in this repo
+
+This is the AJRRN website: Eleventy static site + Cloudflare Worker. Read
+`README.md` and `docs/` first — especially `docs/CONTENT-GUIDE.md`,
+`docs/TRANSLATION.md` and `docs/ARCHITECTURE.md`.
+
+## Ground rules
+
+- **Content changes go in `src/content/<lang>/` only.** Templates, CSS and
+  the Worker rarely need to change for content work.
+- **Four languages, always.** Any change to English content must be mirrored
+  in `fr/`, `es/`, `ar/` (same file names, same front-matter keys, translated
+  values). Translations are done by you (Claude) and committed as markdown;
+  never add a translation plugin or service. Keep the terminology table in
+  `docs/TRANSLATION.md` up to date.
+- **No third-party services** other than GitHub and Cloudflare: no analytics,
+  fonts from CDNs, embeds, forms posting elsewhere, CDN scripts. The Content
+  Security Policy in `worker/index.js` only allows same-origin resources.
+- **Design:** white background, plain and calm; purple `#663399` and mint
+  `#66cc99` from the logo; Freeman for headings; system font for body. No
+  animations, no gimmicks. See `docs/DESIGN.md`.
+- **Accessibility and RTL:** use logical CSS properties; test Arabic pages;
+  keep `alt` text and headings meaningful.
+- Run `npm run check` before finishing any change (build + Worker tests +
+  link/translation-completeness check). For visual changes also run
+  `npm run test:screenshots` and look at phone/tablet/desktop output.
+- Don't commit `initial_docs/`, `initial_instructions.md`, `_site/`, `screenshots/`
+  (all in `.gitignore`).
+
+## Handy commands
+
+```
+npm run dev              # local dev server, http://localhost:8080/en/
+npm run check            # build + tests + link check
+npm run test:screenshots # screenshots into ./screenshots
+SITE_MODE=subdomain npx eleventy   # production-style links (for inspection)
+```

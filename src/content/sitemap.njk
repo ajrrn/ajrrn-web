@@ -1,0 +1,24 @@
+---
+pagination:
+  data: site.languages
+  size: 1
+  alias: language
+permalink: "/{{ language.code }}/sitemap.xml"
+eleventyExcludeFromCollections: true
+kind: raw
+layout: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{%- for item in collections.all %}
+{%- if item.data.lang == language.code and item.url and (item.url | startsWith("/" + language.code + "/")) and not (item.url | startsWith("/" + language.code + "/404")) and item.data.kind != "raw" %}
+  <url>
+    <loc>{{ item.url | canonical }}</loc>
+    {%- set alts = collections.translations[item.data.translationKey] %}
+    {%- for code, alt in alts %}
+    <xhtml:link rel="alternate" hreflang="{{ code }}" href="{{ alt.url | canonical }}"/>
+    {%- endfor %}
+  </url>
+{%- endif %}
+{%- endfor %}
+</urlset>

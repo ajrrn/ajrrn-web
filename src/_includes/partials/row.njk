@@ -1,0 +1,30 @@
+{#- One row in a list.  Expects `item`, `section`, `lang`, `s`. -#}
+{%- set d = item.data -%}
+<li class="item-row">
+  {%- if section == "news" %}
+  <time datetime="{{ item.date | isoDate }}" class="item-date">{{ item.date | localeDate(lang) }}</time>
+  <a class="item-title" href="{{ item.url | href(lang) }}">{{ d.title }}</a>
+  {%- if d.summary %}<p class="item-summary">{{ d.summary }}</p>{% endif %}
+  {%- elif section == "events" %}
+  <time datetime="{{ item.date | isoDate }}" class="item-date">{{ item.date | localeDate(lang) }}{% if d.end %} – {{ d.end | localeDate(lang) }}{% endif %}{% if d.time %} · {{ d.time }}{% endif %}</time>
+  <a class="item-title" href="{{ item.url | href(lang) }}">{{ d.title }}</a>
+  <p class="item-summary">{% if d.location %}{{ d.location }}{% if d.summary %} — {% endif %}{% endif %}{{ d.summary }}</p>
+  {%- elif section == "publications" %}
+  <a class="item-title" href="{{ item.url | href(lang) }}">{{ d.title }}</a>
+  <p class="item-summary">{% if d.authors %}{{ d.authors }}. {% endif %}{% if d.venue %}{{ d.venue }}, {% endif %}<time datetime="{{ item.date | isoDate }}">{{ item.date | localeDate(lang, "month") }}</time>{% if d.link %} · <a href="{{ d.link }}">{{ s.ui.publication_link }}</a>{% endif %}</p>
+  {%- elif section == "opportunities" %}
+  <a class="item-title" href="{{ item.url | href(lang) }}">{{ d.title }}</a>
+  <p class="item-summary">{% if d.location %}{{ d.location }}. {% endif %}{% if d.deadline %}{{ s.ui.deadline }}: <time datetime="{{ d.deadline | isoDate }}">{{ d.deadline | localeDate(lang) }}</time>. {% endif %}{{ d.summary }}</p>
+  {%- elif section == "projects" %}
+  <a class="item-title" href="{{ item.url | href(lang) }}">{{ d.title }}</a>
+  <p class="item-summary">{{ d.summary }}{% if d.status %} <span class="tag">{{ d.status }}</span>{% endif %}</p>
+  {%- elif section == "people" %}
+  <a class="item-title" href="{{ item.url | href(lang) }}">{{ d.name or d.title }}</a>
+  <p class="item-summary">{% if d.role %}{{ d.role }}{% endif %}{% if d.role and d.affiliation %} · {% endif %}{{ d.affiliation }}</p>
+  {%- elif section == "partners" %}
+  <a class="item-title" href="{{ item.url | href(lang) }}">{{ d.name or d.title }}</a>
+  <p class="item-summary">{% if d.type %}{{ d.type }}{% endif %}{% if d.type and d.location %} · {% endif %}{{ d.location }}</p>
+  {%- else %}
+  <a class="item-title" href="{{ item.url | href(lang) }}">{{ d.title }}</a>
+  {%- endif %}
+</li>

@@ -1,0 +1,42 @@
+{
+  // Cloudflare Workers configuration for the AJRRN website.
+  // Docs: https://developers.cloudflare.com/workers/wrangler/configuration/
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ajrrn-web",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-08-01",
+  "compatibility_flags": ["nodejs_compat"],
+
+  // The Eleventy build output.  The Worker runs first for page requests so it
+  // can map language subdomains to language directories; shared files under
+  // /assets/ are served directly (no Worker invocation).
+  "assets": {
+    "directory": "./_site",
+    "binding": "ASSETS",
+    "run_worker_first": ["/*", "!/assets/*"],
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  },
+
+  "vars": {
+    "SITE_DOMAIN": "ajrrn.org"
+  },
+
+  // Production hostnames.  These are created as Cloudflare "custom domains"
+  // (DNS + certificates managed automatically) the first time the Worker is
+  // deployed from the main branch.  The ajrrn.org zone must already be on the
+  // same Cloudflare account.
+  "routes": [
+    { "pattern": "ajrrn.org", "custom_domain": true },
+    { "pattern": "www.ajrrn.org", "custom_domain": true },
+    { "pattern": "fr.ajrrn.org", "custom_domain": true },
+    { "pattern": "es.ajrrn.org", "custom_domain": true },
+    { "pattern": "ar.ajrrn.org", "custom_domain": true }
+  ],
+
+  // Keep the *.workers.dev URL and per-branch preview URLs enabled.
+  "workers_dev": true,
+  "preview_urls": true,
+
+  "observability": { "enabled": true }
+}

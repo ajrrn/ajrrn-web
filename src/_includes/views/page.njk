@@ -1,0 +1,18 @@
+{%- set s = strings[lang] -%}
+<div class="container page-layout">
+  {% include "partials/sectionnav.njk" %}
+  <article class="prose">
+    <h1>{{ title }}</h1>
+    {{ content | safe }}
+    {%- if section == "contact" %}
+    <div class="contact-block">
+      <h2>{{ s.ui.contact_us }}</h2>
+      <p><strong>{{ s.ui.email }}:</strong> <a href="mailto:{{ s.contact.email }}">{{ s.contact.email }}</a></p>
+      <p><strong>{{ s.ui.address }}:</strong><br>{{ s.contact.organization }}<br>{% for line in s.contact.address_lines %}<bdi>{{ line }}</bdi><br>{% endfor %}</p>
+    </div>
+    {%- endif %}
+    {%- if updated %}
+    <p class="updated"><small>{{ s.ui.last_updated }}: <time datetime="{{ updated | isoDate }}">{{ updated | localeDate(lang) }}</time></small></p>
+    {%- endif %}
+  </article>
+</div>

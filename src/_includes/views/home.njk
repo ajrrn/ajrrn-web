@@ -1,0 +1,57 @@
+{%- set s = strings[lang] -%}
+{%- set news = collections.news | byLang(lang) | limit(3) -%}
+{%- set events = collections.events | byLang(lang) | upcoming | limit(3) -%}
+<section class="intro">
+  <div class="container">
+    <h1 class="intro-title">{{ intro_heading or s.full_name }}</h1>
+    <p class="intro-text">{{ intro or s.description }}</p>
+    {%- if intro_links %}
+    <p class="intro-links">
+      {%- for l in intro_links %}
+      <a class="button{% if not loop.first %} button-secondary{% endif %}" href="{{ ("/" + lang + l.url) | href(lang) }}">{{ l.label }}</a>
+      {%- endfor %}
+    </p>
+    {%- endif %}
+  </div>
+</section>
+{%- if content | trim %}
+<section class="container prose home-body">
+  {{ content | safe }}
+</section>
+{%- endif %}
+<section class="container home-grid">
+  <div class="home-col">
+    <h2 class="section-title"><a href="{{ ("/" + lang + "/news/") | href(lang) }}">{{ s.ui.latest_news }}</a></h2>
+    {%- if news.length %}
+    <ul class="item-list">
+      {%- for item in news %}
+      <li class="item-row">
+        <time datetime="{{ item.date | isoDate }}" class="item-date">{{ item.date | localeDate(lang) }}</time>
+        <a class="item-title" href="{{ item.url | href(lang) }}">{{ item.data.title }}</a>
+        {%- if item.data.summary %}<p class="item-summary">{{ item.data.summary }}</p>{% endif %}
+      </li>
+      {%- endfor %}
+    </ul>
+    <p class="more-link"><a href="{{ ("/" + lang + "/news/") | href(lang) }}">{{ s.ui.all_news }}</a></p>
+    {%- else %}
+    <p class="empty">{{ s.ui.no_items }}</p>
+    {%- endif %}
+  </div>
+  <div class="home-col">
+    <h2 class="section-title"><a href="{{ ("/" + lang + "/events/") | href(lang) }}">{{ s.ui.upcoming_events }}</a></h2>
+    {%- if events.length %}
+    <ul class="item-list">
+      {%- for item in events %}
+      <li class="item-row">
+        <time datetime="{{ item.date | isoDate }}" class="item-date">{{ item.date | localeDate(lang) }}{% if item.data.time %} · {{ item.data.time }}{% endif %}</time>
+        <a class="item-title" href="{{ item.url | href(lang) }}">{{ item.data.title }}</a>
+        {%- if item.data.location %}<p class="item-summary">{{ item.data.location }}</p>{% endif %}
+      </li>
+      {%- endfor %}
+    </ul>
+    <p class="more-link"><a href="{{ ("/" + lang + "/events/") | href(lang) }}">{{ s.ui.all_events }}</a></p>
+    {%- else %}
+    <p class="empty">{{ s.ui.no_upcoming_events }}</p>
+    {%- endif %}
+  </div>
+</section>

@@ -1,0 +1,24 @@
+# Continuous integration: build the site, run the Worker tests and the link
+# checker on every push and pull request.  Deployment itself is done by
+# Cloudflare Workers Builds (see docs/CLOUDFLARE-SETUP.md), not by this workflow.
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - run: npm ci
+      - name: Build (preview mode) and check
+        run: npm run check
+      - name: Build (production mode) and check links
+        run: SITE_MODE=subdomain npx eleventy --quiet && SITE_MODE=subdomain node scripts/check-links.js

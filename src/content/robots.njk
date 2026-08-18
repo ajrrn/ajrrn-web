@@ -1,0 +1,18 @@
+---
+pagination:
+  data: site.languages
+  size: 1
+  alias: language
+permalink: "/{{ language.code }}/robots.txt"
+eleventyExcludeFromCollections: true
+kind: raw
+layout: false
+---
+{%- if site.isProduction %}
+User-agent: *
+Allow: /
+Sitemap: https://{{ site.hostFor(language.code) }}/sitemap.xml
+{%- else %}
+User-agent: *
+Disallow: /
+{%- endif %}

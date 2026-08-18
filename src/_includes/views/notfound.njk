@@ -1,0 +1,8 @@
+{%- set s = strings[lang] -%}
+<div class="container page-layout">
+  <article class="prose">
+    <h1>{{ title or s.ui.page_not_found }}</h1>
+    {{ content | safe }}
+    <p><a class="button" href="{{ ("/" + lang + "/") | href(lang) }}">{{ s.ui.go_home }}</a></p>
+  </article>
+</div>

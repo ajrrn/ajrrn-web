@@ -1,0 +1,47 @@
+{%- set s = strings[lang] -%}
+{%- set nav = navigation[lang] -%}
+{%- set alternates = collections.translations[translationKey] -%}
+{%- set pageTitle = (title if title and kind != "home" else s.full_name) -%}
+<!doctype html>
+<html lang="{{ lang }}" dir="{{ dir }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title and kind != "home" %}{{ title }} — {{ s.name }}{% else %}{{ s.full_name }}{% endif %}</title>
+  <meta name="description" content="{{ (description or summary or s.description) | striptags | truncate(300) }}">
+  <link rel="canonical" href="{{ page.url | canonical }}">
+  {%- if not site.isProduction %}
+  <meta name="robots" content="noindex, nofollow">
+  {%- endif %}
+  {%- for code, alt in alternates %}
+  <link rel="alternate" hreflang="{{ code }}" href="{{ alt.url | canonical }}">
+  {%- endfor %}
+  {%- if alternates and alternates[site.defaultLanguage] %}
+  <link rel="alternate" hreflang="x-default" href="{{ alternates[site.defaultLanguage].url | canonical }}">
+  {%- endif %}
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <meta property="og:site_name" content="{{ s.full_name }}">
+  <meta property="og:title" content="{{ pageTitle }}">
+  <meta property="og:description" content="{{ (description or summary or s.description) | striptags | truncate(300) }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | canonical }}">
+  <meta property="og:image" content="https://{{ site.hostFor(site.defaultLanguage) }}/assets/img/og-image.png">
+</head>
+<body class="kind-{{ kind }} section-{{ section }}">
+  <a class="skip-link" href="#main">{{ s.ui.skip_to_content }}</a>
+  {% include "partials/header.njk" %}
+  <main id="main" tabindex="-1">
+    {%- if s.translation_notice %}
+    <div class="notice notice-translation" role="note">
+      <div class="container">{{ s.translation_notice }}</div>
+    </div>
+    {%- endif %}
+    {{ content | safe }}
+  </main>
+  {% include "partials/footer.njk" %}
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+{%- set s = strings[lang] -%}
+{%- set items = collections[section] | byLang(lang) -%}
+<div class="container page-layout">
+  {% include "partials/sectionnav.njk" %}
+  <div class="prose">
+    <h1>{{ title }}</h1>
+    {{ content | safe }}
+  </div>
+
+  {%- if section == "events" %}
+    {%- set upcomingItems = items | upcoming %}
+    {%- set pastItems = items | past %}
+    <section class="list-section">
+      <h2>{{ s.ui.upcoming_events }}</h2>
+      {%- if upcomingItems.length %}
+      <ul class="item-list">
+        {%- for item in upcomingItems %}{% include "partials/row.njk" %}{% endfor %}
+      </ul>
+      {%- else %}<p class="empty">{{ s.ui.no_upcoming_events }}</p>{% endif %}
+    </section>
+    {%- if pastItems.length %}
+    <section class="list-section">
+      <h2>{{ s.ui.past_events }}</h2>
+      <ul class="item-list">
+        {%- for item in pastItems %}{% include "partials/row.njk" %}{% endfor %}
+      </ul>
+    </section>
+    {%- endif %}
+
+  {%- elif section == "opportunities" %}
+    {%- for cat in ["work", "study", "participate"] %}
+      {%- set group = items | where("category", cat) %}
+      {%- if group.length %}
+      <section class="list-section">
+        <h2>{{ s.ui["opportunity_" + cat] }}</h2>
+        <ul class="item-list">
+          {%- for item in group %}{% include "partials/row.njk" %}{% endfor %}
+        </ul>
+      </section>
+      {%- endif %}
+    {%- endfor %}
+    {%- if not items.length %}<p class="empty">{{ s.ui.no_items }}</p>{% endif %}
+
+  {%- elif section == "projects" %}
+    {%- for st in ["A", "B"] %}
+      {%- set group = items | where("stream", st) %}
+      {%- if group.length %}
+      <section class="list-section">
+        <h2>{{ s.ui["stream_" + (st | lower)] }}</h2>
+        <ul class="item-list">
+          {%- for item in group %}{% include "partials/row.njk" %}{% endfor %}
+        </ul>
+      </section>
+      {%- endif %}
+    {%- endfor %}
+    {%- if not items.length %}<p class="empty">{{ s.ui.no_items }}</p>{% endif %}
+
+  {%- elif section == "people" %}
+    {%- for grp in ["staff", "affiliate"] %}
+      {%- set group = items | where("group", grp) %}
+      {%- if group.length %}
+      <section class="list-section">
+        <h2>{{ s.ui.team if grp == "staff" else s.ui.affiliates }}</h2>
+        <ul class="item-list people-list">
+          {%- for item in group %}{% include "partials/row.njk" %}{% endfor %}
+        </ul>
+      </section>
+      {%- endif %}
+    {%- endfor %}
+    {%- if not items.length %}<p class="empty">{{ s.ui.no_items }}</p>{% endif %}
+
+  {%- else %}
+    <section class="list-section">
+      {%- if items.length %}
+      <ul class="item-list">
+        {%- for item in items %}{% include "partials/row.njk" %}{% endfor %}
+      </ul>
+      {%- else %}<p class="empty">{{ s.ui.no_items }}</p>{% endif %}
+    </section>
+  {%- endif %}
+</div>

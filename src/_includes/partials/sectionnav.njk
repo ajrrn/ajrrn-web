@@ -1,0 +1,12 @@
+{#- Secondary navigation for sections that have children (e.g. About / People / Partners). -#}
+{%- set s = strings[lang] -%}
+{%- set current = navigation[lang].main | sectionFor(page.url, lang) -%}
+{%- if current %}
+<nav class="section-nav" aria-label="{{ s.ui.in_this_section }}">
+  <ul>
+    {%- for child in current.children %}
+    <li><a href="{{ child.url | href(lang) }}"{% if page.url == child.url %} aria-current="page"{% endif %}>{{ child.label }}</a></li>
+    {%- endfor %}
+  </ul>
+</nav>
+{%- endif %}

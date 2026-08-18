@@ -1,0 +1,390 @@
+/* ==========================================================================
+   AJRRN website stylesheet
+   Colours from the AJRRN logo style card: purple #663399, mint #66cc99.
+   Headings use Freeman (the logo typeface, self-hosted, OFL licence);
+   body text uses the visitor's system sans-serif so that Latin and Arabic
+   text render well everywhere without loading extra fonts.
+   Layout uses logical properties (inline-start/end) so it mirrors for RTL.
+   ========================================================================== */
+
+@font-face {
+  font-family: "Freeman";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/freeman-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Freeman";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/freeman-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+:root {
+  --purple: #663399;
+  --purple-dark: #4d2673;
+  --purple-tint: #f3eef8;
+  --mint: #66cc99;
+  --mint-dark: #2f8f62;   /* darker mint for text on white (contrast ≥ 4.5:1) */
+  --mint-tint: #eaf7f0;
+  --ink: #1d1d1f;
+  --ink-soft: #4a4a4f;
+  --muted: #6b6b70;
+  --rule: #e2e2e6;
+  --rule-soft: #eeeef1;
+  --bg: #ffffff;
+  --bg-soft: #f7f7f9;
+
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --font-display: "Freeman", var(--font-body);
+
+  --measure: 44rem;
+  --container: 75rem;
+  --gutter: clamp(1rem, 4vw, 2rem);
+  --radius: 3px;
+}
+
+/* ---- Base ---------------------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; }
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main { flex: 1 0 auto; }
+img { max-width: 100%; height: auto; }
+a { color: var(--purple); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.15em; }
+a:hover { color: var(--purple-dark); text-decoration-thickness: 2px; }
+a:focus-visible, button:focus-visible {
+  outline: 3px solid var(--mint);
+  outline-offset: 2px;
+}
+:focus:not(:focus-visible) { outline: none; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0; }
+
+.container {
+  width: min(100% - 2 * var(--gutter), var(--container));
+  margin-inline: auto;
+}
+
+.skip-link {
+  position: absolute;
+  inset-inline-start: 0.5rem;
+  top: -100%;
+  background: var(--purple);
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  z-index: 100;
+  border-radius: var(--radius);
+}
+.skip-link:focus { top: 0.5rem; }
+
+/* ---- Typography ---------------------------------------------------------- */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--ink);
+  letter-spacing: 0.005em;
+  margin: 0 0 0.6em;
+  text-wrap: balance;
+}
+h1 { font-size: clamp(2rem, 1.5rem + 2.2vw, 3rem); }
+h2 { font-size: clamp(1.5rem, 1.25rem + 1.2vw, 2rem); margin-top: 1.75em; }
+h3 { font-size: clamp(1.25rem, 1.1rem + 0.7vw, 1.5rem); margin-top: 1.5em; }
+h4 { font-size: 1.125rem; margin-top: 1.25em; }
+h1:first-child, h2:first-child, h3:first-child { margin-top: 0; }
+p, ul, ol, dl { margin: 0 0 1.1em; }
+strong { font-weight: 650; }
+small { font-size: 0.875em; }
+
+/* Freeman has no Arabic glyphs: fall back to a bold system face for Arabic. */
+html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3, html[lang="ar"] h4,
+html[lang="ar"] .section-title, html[lang="ar"] .intro-title {
+  font-family: var(--font-body);
+  font-weight: 700;
+  letter-spacing: 0;
+}
+html[lang="ar"] { line-height: 1.75; }
+
+.prose { max-width: var(--measure); }
+.prose h1 { padding-bottom: 0.4rem; border-bottom: 3px solid var(--purple); margin-bottom: 1.2rem; }
+.prose ul, .prose ol { padding-inline-start: 1.4em; }
+.prose li + li { margin-top: 0.3em; }
+.prose blockquote {
+  margin: 1.5em 0;
+  padding-inline-start: 1em;
+  border-inline-start: 4px solid var(--mint);
+  color: var(--ink-soft);
+}
+.prose table { border-collapse: collapse; width: 100%; font-size: 0.95em; display: block; overflow-x: auto; }
+.prose th, .prose td { border: 1px solid var(--rule); padding: 0.4em 0.6em; text-align: start; }
+.prose img { display: block; margin: 1.5em 0; }
+.prose em { color: inherit; }
+.prose code { font-size: 0.9em; background: var(--bg-soft); padding: 0.1em 0.3em; border-radius: var(--radius); }
+
+/* ---- Header -------------------------------------------------------------- */
+.site-header {
+  border-bottom: 1px solid var(--rule);
+  background: var(--bg);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  flex-wrap: wrap;
+  padding-block: 0.9rem;
+}
+.brand { display: inline-flex; align-items: center; text-decoration: none; }
+.brand-logo { width: auto; height: 3.6rem; display: block; }
+.brand:focus-visible { outline-offset: 6px; }
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+  flex-wrap: wrap;
+  margin-inline-start: auto;
+}
+.nav-list, .lang-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.nav-list { gap: 0.15rem 1rem; }
+.nav-list a {
+  display: inline-block;
+  padding: 0.35rem 0;
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.975rem;
+  border-bottom: 2px solid transparent;
+}
+.nav-list a:hover { color: var(--purple); border-bottom-color: var(--mint); }
+.nav-list a[aria-current] { color: var(--purple); border-bottom-color: var(--purple); }
+
+.lang-list { gap: 0.15rem 0.4rem; font-size: 0.85rem; }
+.lang-list a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  padding: 0.25rem 0.35rem;
+  border-radius: var(--radius);
+}
+.lang-list a:hover { color: var(--purple); background: var(--purple-tint); }
+.lang-list a[aria-current] { color: var(--purple); font-weight: 600; background: var(--purple-tint); }
+.site-header .lang-list { padding-inline-start: 0.75rem; border-inline-start: 1px solid var(--rule); }
+
+.nav-toggle {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 0.45rem 0.7rem;
+  font: inherit;
+  font-size: 0.95rem;
+  color: var(--ink);
+  cursor: pointer;
+}
+.nav-toggle-bars {
+  width: 18px; height: 2px; background: currentColor; position: relative; display: block;
+  box-shadow: 0 -6px 0 currentColor, 0 6px 0 currentColor;
+}
+.nav-toggle[aria-expanded="true"] { background: var(--purple-tint); border-color: var(--purple); color: var(--purple); }
+
+@media (max-width: 52em) {
+  .header-inner { padding-block: 0.7rem; }
+  .brand-logo { height: 3rem; }
+  .nav-toggle:not([hidden]) { display: inline-flex; }
+  .site-nav {
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    padding-block: 0.5rem 0.75rem;
+    border-top: 1px solid var(--rule-soft);
+    margin-top: 0.5rem;
+  }
+  .site-nav.is-collapsed { display: none; }
+  .nav-list { flex-direction: column; align-items: stretch; gap: 0; }
+  .nav-list a { display: block; padding: 0.6rem 0.25rem; border-bottom: 1px solid var(--rule-soft); }
+  .nav-list a[aria-current] { border-inline-start: 3px solid var(--purple); padding-inline-start: 0.6rem; border-bottom-color: var(--rule-soft); }
+  .site-header .lang-list { padding: 0.5rem 0.25rem 0; border-inline-start: 0; gap: 0.25rem 0.75rem; }
+}
+
+/* ---- Notices ------------------------------------------------------------- */
+.notice {
+  background: var(--purple-tint);
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid #e6dcef;
+}
+.notice a { color: var(--purple-dark); }
+
+/* ---- Home ---------------------------------------------------------------- */
+.intro { padding-block: clamp(2rem, 6vw, 4rem) clamp(1.5rem, 4vw, 3rem); }
+.intro-title {
+  font-size: clamp(2.2rem, 1.6rem + 3vw, 3.75rem);
+  max-width: 22ch;
+  margin-bottom: 0.4em;
+}
+.intro-text {
+  font-size: clamp(1.1rem, 1rem + 0.5vw, 1.3rem);
+  max-width: 40rem;
+  color: var(--ink-soft);
+  margin-bottom: 1.4rem;
+}
+.intro-links { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 0; }
+.button {
+  display: inline-block;
+  background: var(--purple);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6rem 1.1rem;
+  border-radius: var(--radius);
+  font-weight: 500;
+  border: 2px solid var(--purple);
+}
+.button:hover { background: var(--purple-dark); border-color: var(--purple-dark); color: #fff; }
+.button-secondary { background: transparent; color: var(--purple); }
+.button-secondary:hover { background: var(--purple-tint); color: var(--purple-dark); }
+
+.home-body { padding-block: 0 2rem; }
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: 2rem 3rem;
+  padding-block: 1rem 3rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 2rem;
+}
+.section-title { font-size: 1.5rem; margin: 0 0 0.75rem; }
+.section-title a { color: inherit; text-decoration: none; }
+.section-title a:hover { color: var(--purple); }
+.more-link { margin-top: 0.75rem; }
+.more-link a { text-decoration: none; font-weight: 500; }
+.more-link a:hover { text-decoration: underline; }
+/* Directional arrows are added in CSS so they flip for right-to-left pages. */
+.more-link a::after { content: " \2192"; }            /* → */
+html[dir="rtl"] .more-link a::after { content: " \2190"; } /* ← */
+.back-link a::before { content: "\2190 "; }
+html[dir="rtl"] .back-link a::before { content: "\2192 "; }
+
+/* ---- Lists --------------------------------------------------------------- */
+.item-list { list-style: none; margin: 0; padding: 0; max-width: var(--measure); }
+.item-row { padding: 0.9rem 0; border-top: 1px solid var(--rule-soft); }
+.item-row:first-child { border-top: 0; }
+.item-list:not(.people-list) .item-row:first-child { padding-top: 0.25rem; }
+.item-date { display: block; font-size: 0.85rem; color: var(--muted); margin-bottom: 0.15rem; }
+.item-title { font-weight: 600; text-decoration: none; font-size: 1.05rem; }
+.item-title:hover { text-decoration: underline; }
+.item-summary { margin: 0.2rem 0 0; color: var(--ink-soft); font-size: 0.95rem; }
+.empty { color: var(--muted); }
+.list-section { margin-top: 2rem; max-width: var(--measure); }
+.list-section h2 { font-size: 1.35rem; padding-bottom: 0.3rem; border-bottom: 2px solid var(--mint); margin-bottom: 0.5rem; }
+.tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  background: var(--mint-tint);
+  color: var(--mint-dark);
+  padding: 0.05em 0.5em;
+  border-radius: 999px;
+  margin-inline-start: 0.4em;
+  vertical-align: middle;
+}
+
+/* ---- Pages --------------------------------------------------------------- */
+.page-layout { padding-block: clamp(1.5rem, 4vw, 3rem) clamp(2rem, 5vw, 4rem); }
+.section-nav { margin-bottom: 1.5rem; }
+.section-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; font-size: 0.95rem; }
+.section-nav a { text-decoration: none; color: var(--ink-soft); padding: 0.25rem 0; border-bottom: 2px solid transparent; }
+.section-nav a:hover { color: var(--purple); }
+.section-nav a[aria-current] { color: var(--purple); border-bottom-color: var(--purple); font-weight: 600; }
+
+.breadcrumb { font-size: 0.9rem; margin-bottom: 0.5rem; }
+.breadcrumb a { text-decoration: none; color: var(--ink-soft); }
+.breadcrumb a:hover { color: var(--purple); text-decoration: underline; }
+.meta {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.25rem 1rem;
+  font-size: 0.95rem;
+  padding: 0.75rem 1rem;
+  background: var(--bg-soft);
+  border-inline-start: 3px solid var(--mint);
+  margin: 0 0 1.5rem;
+}
+.meta dt { color: var(--muted); font-weight: 500; }
+.meta dd { margin: 0; overflow-wrap: anywhere; }
+.meta:empty { display: none; }
+.back-link { margin-top: 2rem; font-size: 0.95rem; }
+.back-link a { text-decoration: none; }
+.back-link a:hover { text-decoration: underline; }
+.contact-block { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--rule); }
+.updated { color: var(--muted); margin-top: 2rem; }
+
+/* ---- Footer -------------------------------------------------------------- */
+.site-footer {
+  border-top: 1px solid var(--rule);
+  background: var(--bg-soft);
+  color: var(--ink-soft);
+  font-size: 0.925rem;
+  margin-top: 2rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1.4fr);
+  gap: 2rem 3rem;
+  padding-block: 2.5rem 1.5rem;
+}
+.footer-logo { width: 13rem; height: auto; margin-bottom: 0.75rem; }
+.footer-land { font-size: 0.85rem; color: var(--muted); }
+.footer-links ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 1.5rem; }
+.footer-links li { break-inside: avoid; margin-bottom: 0.35rem; }
+.footer-links a, .footer-contact a { color: var(--ink-soft); text-decoration: none; }
+.footer-links a:hover, .footer-contact a:hover { color: var(--purple); text-decoration: underline; }
+.footer-contact .lang-list { margin-top: 0.75rem; }
+.footer-contact .lang-list a { padding-inline-start: 0; }
+.footer-bottom { border-top: 1px solid var(--rule); padding-block: 1rem 1.5rem; font-size: 0.825rem; color: var(--muted); }
+.footer-bottom p { margin: 0; }
+
+@media (max-width: 52em) {
+  .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .footer-links ul { columns: 2; }
+}
+@media (max-width: 30em) {
+  body { font-size: 1rem; }
+  .meta { grid-template-columns: 1fr; gap: 0.1rem; }
+  .meta dt { margin-top: 0.4rem; }
+  .meta dt:first-child { margin-top: 0; }
+}
+
+/* ---- Print --------------------------------------------------------------- */
+@media print {
+  .site-nav, .nav-toggle, .skip-link, .notice, .site-footer .lang-list { display: none !important; }
+  a { color: inherit; }
+  .prose a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.85em; color: var(--muted); }
+}
