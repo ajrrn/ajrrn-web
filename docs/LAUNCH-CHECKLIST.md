@@ -18,7 +18,7 @@ before (or soon after) the site goes public. Last reviewed 2026-08-18.
 
 ## Technical
 - [x] Cloudflare setup complete (docs/CLOUDFLARE-SETUP.md); all five hostnames verified live 2026-08-18 (`scripts/smoke-production.sh`).
-- [ ] Branch protection on `main`.
+- [x] Repository public; `main` protected by the "Protect main" ruleset (PR + `check` + `Workers Builds: ajrrn-web` required). Org admins can bypass — consider removing that once more people have write access.
 - [ ] Ask the designer for native SVG exports of the logo (colour and white, text as outlines) and a square mark for the favicon; replace `src/assets/img/ajrrn-logo-colour.svg` (see docs/DESIGN.md).
 - [ ] Open Graph image (`src/assets/img/og-image.png`) — replace with a designed one if desired.
 - [x] Production `robots.txt` allows crawling and lists each language's sitemap. Note: the Cloudflare zone has *managed robots.txt* on, which prepends rules blocking AI crawlers (GPTBot, ClaudeBot, CCBot, Google-Extended, …) — change under the zone's Bots / AI Crawl Control settings if you want otherwise.

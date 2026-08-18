@@ -44,8 +44,9 @@ too). For anything visual, `npm run test:screenshots` writes phone / tablet /
 desktop screenshots for every language into `screenshots/` — please look at
 the Arabic (right-to-left) ones as well.
 
-Branch → pull request → review → merge; merging into `main` deploys to
-production automatically. See [docs/WORKFLOW.md](docs/WORKFLOW.md).
+Branch → pull request → checks pass → merge; `main` is protected, so this
+is the only way in, and merging deploys to production automatically. See
+[docs/WORKFLOW.md](docs/WORKFLOW.md).
 
 ## Licence and credit
 

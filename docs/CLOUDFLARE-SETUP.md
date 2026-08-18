@@ -113,8 +113,10 @@ listed under *Deployments* / *Versions* in the dashboard). Previews serve
 
 ## 6. GitHub settings (recommended)
 
-- **Branch protection on `main`**: require a pull request and require the
-  "CI / check" status to pass before merging (Settings → Branches → Add rule).
+- **Branch protection on `main`** (done): a ruleset requiring a pull request
+  with the `check` and `Workers Builds: ajrrn-web` status checks
+  (Settings → Rules → Rulesets). On GitHub's Free plan this is only available
+  for public repositories.
 - Grant the people who will edit content *Write* access; keep *Admin* to a few.
 
 ## 7. Cost and limits
