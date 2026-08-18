@@ -23,7 +23,6 @@ contact:
     - Toronto, Ontario M3J 1P3, Canada
 
 footer:
-  about: The AJRRN is a partnership of universities, legal and advocacy organizations, technology and rights groups, and researchers with lived experience of displacement working to advance the rights and interests of people on the move in a world of rapidly advancing technology. We are hosted by York University's Refugee Law Lab in Toronto.
   land: "York University’s Keele Campus is located on Toronto Purchase Treaty, No. 13 lands and is situated on the traditional territory of the Huron-Wendat and Haudenosaunee. We are grateful for the opportunity to be learning, working and thriving on this land, and we commit to learn the truth and be active in the process of reconciliation."
   copyright: Algorithmic Justice for Refugees Research Network
 

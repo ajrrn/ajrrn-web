@@ -1,9 +1,9 @@
 ---
-name: Project Manager (to be hired)
-title: Project Manager (to be hired)
+name: Jessica Türje
+title: Jessica Türje
 role: Project Manager
 affiliation: Refugee Law Lab, York University
+email: jturje@yorku.ca
 group: staff
 order: 3
 ---
-Placeholder.

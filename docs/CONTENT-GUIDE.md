@@ -125,15 +125,19 @@ order: 1                  # optional; lower numbers first
 ```yaml
 ---
 name: Jane Doe
-title: Jane Doe           # same as name (used for the page title)
+title: Jane Doe           # same as name
 role: Project Director
 affiliation: Osgoode Hall Law School, York University
+email: jane@example.org   # optional, shown as a mailto link
 group: staff              # staff | affiliate  (controls which list)
-link: https://…           # personal/institutional page, optional
+link: https://…           # external profile page; the name links there (optional)
 order: 1                  # optional; lower numbers first
 ---
-Short biography (markdown).
 ```
+
+People do not get pages of their own on this site: they are listed on the
+People page and their name links to the external `link` if there is one. The
+markdown body is currently not displayed (kept for future use).
 
 ### Partners — `partners/slug.md`
 
@@ -143,11 +147,13 @@ name: Organization name
 title: Organization name
 location: City, Country
 type: Community organization
-link: https://…
+link: https://…           # the name links to the partner's website
 order: 1
 ---
-Short description.
 ```
+
+Like people, partners are listed on the Partners page (name → external
+website) and do not get pages of their own.
 
 ## Menus — `navigation.md`
 

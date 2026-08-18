@@ -35,5 +35,3 @@ L'AJRRN est hébergé par le [Refugee Law Lab](https://refugeelab.ca) de l'Osgoo
 - **Multilinguisme.** Les documents essentiels sont offerts en anglais, en français, en espagnol et en arabe.
 - **Équité.** Nous visons des milieux de recherche où nommer et affronter l'oppression est bienvenu, et où les chercheuses et chercheurs issus de groupes en quête d'équité — y compris les personnes ayant une expérience de la migration — assument un rôle de direction.
 - **Soin des données.** Notre objectif n'est pas une gestion parfaite des données, mais des pratiques réfléchies qui respectent les personnes dont la vie et l'histoire se reflètent dans nos recherches.
-
-*Cette page est provisoire. Son contenu sera étoffé au fil du lancement du réseau.*

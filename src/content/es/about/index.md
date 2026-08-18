@@ -35,5 +35,3 @@ La AJRRN tiene su sede en el [Refugee Law Lab](https://refugeelab.ca) (Laborator
 - **Multilingüismo.** Los materiales fundamentales se ofrecen en inglés, francés, español y árabe.
 - **Equidad.** Aspiramos a entornos de investigación en los que nombrar y enfrentar la opresión sea bienvenido, y en los que lideren las personas investigadoras de grupos que merecen equidad, incluidas las personas con experiencia migratoria.
 - **Cuidado de los datos.** Nuestro objetivo no es una gestión perfecta de los datos, sino prácticas reflexivas que respeten a las personas cuyas vidas e historias se reflejan en nuestra investigación.
-
-*Esta página es provisional. El contenido se ampliará a medida que la red se ponga en marcha.*

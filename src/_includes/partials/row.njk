@@ -19,10 +19,11 @@
   <a class="item-title" href="{{ item.url | href(lang) }}">{{ d.title }}</a>
   <p class="item-summary">{{ d.summary }}{% if d.status %} <span class="tag">{{ d.status }}</span>{% endif %}</p>
   {%- elif section == "people" %}
-  <a class="item-title" href="{{ item.url | href(lang) }}">{{ d.name or d.title }}</a>
-  <p class="item-summary">{% if d.role %}{{ d.role }}{% endif %}{% if d.role and d.affiliation %} · {% endif %}{{ d.affiliation }}</p>
+  {#- People and partners link to their own external pages, not to pages on this site. -#}
+  {%- if d.link %}<a class="item-title" href="{{ d.link }}">{{ d.name or d.title }}</a>{% else %}<span class="item-title">{{ d.name or d.title }}</span>{% endif %}
+  <p class="item-summary">{% if d.role %}{{ d.role }}{% endif %}{% if d.role and d.affiliation %} · {% endif %}{{ d.affiliation }}{% if d.email %} · <a href="mailto:{{ d.email }}">{{ d.email }}</a>{% endif %}</p>
   {%- elif section == "partners" %}
-  <a class="item-title" href="{{ item.url | href(lang) }}">{{ d.name or d.title }}</a>
+  {%- if d.link %}<a class="item-title" href="{{ d.link }}">{{ d.name or d.title }}</a>{% else %}<span class="item-title">{{ d.name or d.title }}</span>{% endif %}
   <p class="item-summary">{% if d.type %}{{ d.type }}{% endif %}{% if d.type and d.location %} · {% endif %}{{ d.location }}</p>
   {%- else %}
   <a class="item-title" href="{{ item.url | href(lang) }}">{{ d.title }}</a>

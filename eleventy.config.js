@@ -49,6 +49,7 @@ function hrefFor(url, currentLang) {
 
 /** Canonical (production) absolute URL for a built URL. */
 function canonicalFor(url) {
+  if (typeof url !== "string") return "";
   const m = url.match(LANG_RE);
   if (!m) return `https://${site.hostFor(site.defaultLanguage)}${url}`;
   const lang = m[1];
@@ -101,6 +102,16 @@ export default function (eleventyConfig) {
   eleventyConfig.ignores.add("src/content/*/site.md");
   eleventyConfig.ignores.add("src/content/*/navigation.md");
 
+  // People and partners are listed on their section page and link outward
+  // (`link:`); they do not get pages of their own.
+  eleventyConfig.addPreprocessor("no-standalone-people-partners", "md", (data) => {
+    const stem = (data.page?.inputPath || "").replace(/^\.?\/?src\/content/, "").replace(/\.md$/, "");
+    const { section, isIndex, lang } = parseStem(stem);
+    if (lang && !isIndex && (section === "people" || section === "partners") && !data.permalink) {
+      data.permalink = false;
+    }
+  });
+
   // Every markdown page uses the dispatching layout unless it says otherwise.
   eleventyConfig.addGlobalData("layout", "layouts/default.njk");
 
@@ -143,7 +154,7 @@ export default function (eleventyConfig) {
   // explicit language ("/fr/about/") are treated as cross-language links.
   eleventyConfig.addTransform("rewrite-links", function (content) {
     const out = this.page?.outputPath || "";
-    if (!out.endsWith(".html")) return content;
+    if (typeof out !== "string" || !out.endsWith(".html")) return content;
     const m = out.match(/[\\/]_site[\\/]([a-z]{2})[\\/]/);
     const lang = m && LANGS.includes(m[1]) ? m[1] : site.defaultLanguage;
     return content.replace(/\b(href|src)="(\/[^"]*)"/g, (all, attr, url) => {

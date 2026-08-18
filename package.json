@@ -5,15 +5,16 @@
   "description": "Website of the Algorithmic Justice for Refugees Research Network (AJRRN) \u2014 static site built with Eleventy, deployed on Cloudflare Workers.",
   "type": "module",
   "scripts": {
-    "build": "eleventy",
-    "build:production": "SITE_MODE=subdomain eleventy",
+    "build": "npm run clean && eleventy",
+    "build:production": "npm run clean && SITE_MODE=subdomain eleventy",
     "dev": "eleventy --serve",
     "preview": "npm run build && wrangler dev",
     "deploy": "npm run build:production && wrangler deploy",
     "test": "node --test tests/*.test.js",
     "test:screenshots": "node scripts/screenshots.js",
     "check": "npm run build && npm test && node scripts/check-links.js && node scripts/a11y.js",
-    "test:a11y": "node scripts/a11y.js"
+    "test:a11y": "node scripts/a11y.js",
+    "clean": "node -e \"fs.rmSync('_site',{recursive:true,force:true})\""
   },
   "engines": {
     "node": ">=20"

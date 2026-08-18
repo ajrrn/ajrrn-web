@@ -3,7 +3,7 @@ name: مرصد الهجرة والتكنولوجيا (Migration and Technology M
 title: مرصد الهجرة والتكنولوجيا (Migration and Technology Monitor)
 location: دولي
 type: منظمة بحثية
-link: https://migrationtechmonitor.com
+link: https://www.migrationtechmonitor.com/
 order: 2
 ---
 نص مؤقت.

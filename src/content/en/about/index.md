@@ -35,5 +35,3 @@ The AJRRN is hosted by the [Refugee Law Lab](https://refugeelab.ca) at Osgoode H
 - **Multilingual.** Core materials are made available in English, French, Spanish and Arabic.
 - **Equity.** We aim for research environments where naming and confronting oppression is welcomed, and where researchers from equity‑deserving groups — including people with migration experience — lead.
 - **Care with data.** Our goal is not perfect data management, but thoughtful practices that respect the people whose lives and stories are reflected in our research.
-
-*This page is a placeholder. Content will be expanded as the network launches.*

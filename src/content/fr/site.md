@@ -23,7 +23,6 @@ contact:
     - Toronto (Ontario) M3J 1P3, Canada
 
 footer:
-  about: L'AJRRN est un partenariat entre des universités, des organisations juridiques et de défense des droits, des groupes œuvrant en technologie et en droits numériques, ainsi que des chercheuses et chercheurs ayant vécu le déplacement, qui travaillent ensemble à faire progresser les droits et les intérêts des personnes en déplacement dans un monde où la technologie évolue rapidement. Nous sommes hébergés par le Refugee Law Lab de l'Université York, à Toronto.
   land: "Le campus Keele de l'Université York se trouve sur les terres visées par le Traité no 13 (Toronto Purchase Treaty, No. 13) et sur le territoire traditionnel des Hurons-Wendat et des Haudenosaunee. Nous sommes reconnaissants de pouvoir apprendre, travailler et nous épanouir sur ces terres, et nous nous engageons à connaître la vérité et à participer activement au processus de réconciliation."
   copyright: Réseau de recherche sur la justice algorithmique pour les personnes réfugiées (AJRRN)
 
