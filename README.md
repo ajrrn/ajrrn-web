@@ -71,6 +71,10 @@ news item (SSHRC grant), one event (launch, 22 Sept 2026). Publications,
 opportunities and project *entries* are still sample placeholders — see
 `docs/LAUNCH-CHECKLIST.md`.
 
+## Contributing and security
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md).
+
 ## Licence
 
 Code: MIT (see [LICENSE](LICENSE)). Content and logos: © AJRRN. Freeman
