@@ -33,7 +33,7 @@ essential meaning — only as a small decorative accent.
 
 - One container (max 72rem), header with logo + menu + language switcher,
   footer with about / links / contact.
-- Content pages: optional section sub-menu (About · People · Partners), an
+- Content pages: optional section sub-menu (About · People · Partners; Projects · Publications), an
   h1 with a purple rule, prose.
 - Lists (news, events, …) are simple bordered rows: date · title · summary.
   No card grids, no images required.

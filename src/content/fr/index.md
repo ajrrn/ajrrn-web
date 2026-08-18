@@ -6,6 +6,6 @@ intro: Le Réseau de recherche sur la justice algorithmique pour les personnes r
 intro_links:
   - label: À propos du réseau
     url: /about/
-  - label: Notre recherche
+  - label: Nos projets
     url: /projects/
 ---

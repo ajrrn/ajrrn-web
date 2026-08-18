@@ -11,21 +11,21 @@ description: La Red de Investigación sobre Justicia Algorítmica para Personas 
 # Se muestra en todas las páginas que no están en inglés. Las páginas en inglés no llevan aviso.
 translation_notice: "Esta página se tradujo del inglés con inteligencia artificial generativa (Claude). La versión en inglés es la versión de referencia; si encuentra algún error, le agradeceremos que nos lo comunique."
 
-# Bloque de contacto (pie de página + página de contacto). PROVISIONAL: reemplazar antes del lanzamiento.
+# Bloque de contacto (pie de página + página de contacto).
 contact:
-  email: info@ajrrn.org
+  email: ajrrn@yorku.ca
+  address_label: Dirección de la institución anfitriona
   organization: Refugee Law Lab
   address_lines:
-    - Osgoode Hall Law School / Centre for Refugee Studies
+    - Osgoode Hall Law School
     - York University
     - 4700 Keele Street
     - Toronto, Ontario M3J 1P3, Canadá
 
 footer:
-  about: La AJRRN tiene su sede en el Refugee Law Lab de la Universidad de York, en Toronto. Es una alianza entre universidades, organizaciones jurídicas y de defensa de derechos, grupos de tecnología y derechos digitales, y personas investigadoras con experiencia propia de desplazamiento.
-  land: La Universidad de York se encuentra en los territorios tradicionales de numerosas naciones indígenas, entre ellas los anishinabek, los haudenosaunee y los hurones-wendat, y está amparada por el Tratado 13 y los Tratados Williams. Este reconocimiento territorial es provisional y está pendiente de revisión.
+  about: La AJRRN es una alianza entre universidades, organizaciones jurídicas y de defensa de derechos, grupos de tecnología y derechos digitales, y personas investigadoras con experiencia propia de desplazamiento, que trabaja para promover los derechos y los intereses de las personas en movimiento en un mundo donde la tecnología avanza a gran velocidad. Tenemos nuestra sede en el Refugee Law Lab de la Universidad de York, en Toronto.
+  land: "El campus Keele de la Universidad de York se encuentra en las tierras del Tratado de Compra de Toronto (Toronto Purchase Treaty, No. 13) y está situado en el territorio tradicional de los pueblos huron-wendat y haudenosaunee. Agradecemos la oportunidad de aprender, trabajar y prosperar en estas tierras, y nos comprometemos a conocer la verdad y a participar activamente en el proceso de reconciliación."
   copyright: Red de Investigación sobre Justicia Algorítmica para Personas Refugiadas
-  translation_credit: "Las versiones de este sitio en francés, español y árabe se tradujeron del inglés con inteligencia artificial generativa (Claude) y son revisadas por nuestro equipo. Si encuentra algún error, le agradeceremos que nos lo comunique."
 
 ui:
   skip_to_content: Ir al contenido principal

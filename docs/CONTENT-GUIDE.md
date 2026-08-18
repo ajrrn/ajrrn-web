@@ -14,7 +14,7 @@ src/content/en/
 ├── about/index.md       About the network
 ├── people/index.md      + one file per person
 ├── partners/index.md    + one file per partner organization
-├── projects/index.md    Research page + one file per project
+├── projects/index.md    Projects page (research streams) + one file per project
 ├── publications/index.md + one file per publication
 ├── opportunities/index.md + one file per opportunity
 ├── events/index.md      + one file per event
@@ -113,7 +113,7 @@ summary: …
 ```yaml
 ---
 title: …
-stream: A                 # A or B (controls grouping on the Research page)
+stream: A                 # A or B (controls grouping on the Projects page)
 status: Planned           # free text, optional
 summary: …
 order: 1                  # optional; lower numbers first

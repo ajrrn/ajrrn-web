@@ -13,10 +13,13 @@ main:
         url: /people/
       - label: Organizaciones aliadas
         url: /partners/
-  - label: Investigación
+  - label: Proyectos
     url: /projects/
-  - label: Publicaciones
-    url: /publications/
+    children:
+      - label: Proyectos
+        url: /projects/
+      - label: Publicaciones
+        url: /publications/
   - label: Eventos
     url: /events/
   - label: Noticias
@@ -33,7 +36,7 @@ footer:
     url: /people/
   - label: Organizaciones aliadas
     url: /partners/
-  - label: Investigación
+  - label: Proyectos
     url: /projects/
   - label: Publicaciones
     url: /publications/

@@ -1,5 +1,5 @@
 ---
-title: Research
+title: Projects
 description: The research streams and projects of the Algorithmic Justice for Refugees Research Network.
 ---
 Our research is organized in two overlapping streams. Specific projects are chosen through annual calls for community‑proposed projects, reviewed by a Consultative Committee made up of community partners and researchers with lived experience of displacement.
@@ -11,6 +11,8 @@ Uses human rights law to study and critique technologies of border control: auto
 ### Stream B — Rights‑enhancing technologies
 
 Builds and evaluates open‑source tools that support refugees, their advocates and adjudicators: privacy‑preserving redaction of decisions to enable open access; secure platforms for sharing and comparing asylum decision data across jurisdictions; locally hosted AI tools to support legal intake; tools connecting migrants with legal help; and indicators of quality of counsel.
+
+Publications arising from this work are listed on the [Publications](/publications/) page.
 
 ## Projects
 

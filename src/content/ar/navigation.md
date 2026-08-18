@@ -13,10 +13,13 @@ main:
         url: /people/
       - label: الشركاء
         url: /partners/
-  - label: الأبحاث
+  - label: المشاريع
     url: /projects/
-  - label: المنشورات
-    url: /publications/
+    children:
+      - label: المشاريع
+        url: /projects/
+      - label: المنشورات
+        url: /publications/
   - label: الفعاليات
     url: /events/
   - label: الأخبار
@@ -33,7 +36,7 @@ footer:
     url: /people/
   - label: الشركاء
     url: /partners/
-  - label: الأبحاث
+  - label: المشاريع
     url: /projects/
   - label: المنشورات
     url: /publications/

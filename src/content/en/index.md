@@ -6,6 +6,6 @@ intro: The Algorithmic Justice for Refugees Research Network brings together sch
 intro_links:
   - label: About the network
     url: /about/
-  - label: Our research
+  - label: Our projects
     url: /projects/
 ---

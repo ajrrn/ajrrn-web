@@ -11,21 +11,21 @@ description: The Algorithmic Justice for Refugees Research Network (AJRRN) bring
 # Shown on every non-English page.  English pages have no notice.
 translation_notice: ""
 
-# Contact block (footer + contact page).  PLACEHOLDER — replace before launch.
+# Contact block (footer + contact page).
 contact:
-  email: info@ajrrn.org
+  email: ajrrn@yorku.ca
+  address_label: Host address
   organization: Refugee Law Lab
   address_lines:
-    - Osgoode Hall Law School / Centre for Refugee Studies
+    - Osgoode Hall Law School
     - York University
     - 4700 Keele Street
     - Toronto, Ontario M3J 1P3, Canada
 
 footer:
-  about: The AJRRN is hosted by the Refugee Law Lab at York University, Toronto. It is a partnership of universities, legal and advocacy organizations, technology and rights groups, and researchers with lived experience of displacement.
-  land: York University is located on the traditional territories of many Indigenous nations, including the Anishinabek, the Haudenosaunee and the Huron‑Wendat, and is covered by Treaty 13 and the Williams Treaties. This land acknowledgement is a placeholder to be reviewed.
+  about: The AJRRN is a partnership of universities, legal and advocacy organizations, technology and rights groups, and researchers with lived experience of displacement working to advance the rights and interests of people on the move in a world of rapidly advancing technology. We are hosted by York University's Refugee Law Lab in Toronto.
+  land: "York University’s Keele Campus is located on Toronto Purchase Treaty, No. 13 lands and is situated on the traditional territory of the Huron-Wendat and Haudenosaunee. We are grateful for the opportunity to be learning, working and thriving on this land, and we commit to learn the truth and be active in the process of reconciliation."
   copyright: Algorithmic Justice for Refugees Research Network
-  translation_credit: "Versions of this site in French, Spanish and Arabic were translated from English using generative AI (Claude) and are reviewed by our team. Please tell us if you find an error."
 
 ui:
   skip_to_content: Skip to main content

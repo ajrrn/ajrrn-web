@@ -4,9 +4,8 @@ Things that are placeholders or assumptions in the first version and should be
 confirmed before (or soon after) the site goes public.
 
 ## Content
-- [ ] `contact.email` in each `site.md` (currently `info@ajrrn.org` — make sure the mailbox exists).
-- [ ] Postal address block in each `site.md`.
-- [ ] Land acknowledgement (`footer.land`) — replace the placeholder text with York University's approved wording (and translations), or remove.
+- [ ] `contact.email` in each `site.md` is `ajrrn@yorku.ca` — make sure the mailbox is monitored.
+- [ ] Land acknowledgement (`footer.land`) uses York University's wording; the French/Spanish/Arabic renderings were AI-translated — have them checked.
 - [ ] Funder acknowledgement (e.g. SSHRC) — not yet mentioned anywhere; add to About / footer once confirmed.
 - [ ] `people/` — the sample entries name the Director and Stream A lead from the grant application; confirm names, roles and consent for everyone listed, and add photos/bios only with consent.
 - [ ] `partners/` — the sample entries name three organizations from the application; confirm each partner agrees to be listed and how it wants to be named/linked.

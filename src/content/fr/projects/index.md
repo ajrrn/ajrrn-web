@@ -1,5 +1,5 @@
 ---
-title: Recherche
+title: Projets
 description: Les axes de recherche et les projets du Réseau de recherche sur la justice algorithmique pour les personnes réfugiées.
 ---
 Notre recherche s'organise en deux axes qui se recoupent. Les projets sont choisis dans le cadre d'appels annuels à projets proposés par la communauté, évalués par un Comité consultatif composé de partenaires communautaires et de chercheuses et chercheurs ayant vécu le déplacement.
@@ -11,6 +11,8 @@ Mobilise le droit relatif aux droits de la personne pour étudier et critiquer l
 ### Axe B — Technologies favorables aux droits
 
 Conçoit et évalue des outils libres qui soutiennent les personnes réfugiées, celles qui les défendent et les décideurs et décideuses : caviardage des décisions respectueux de la vie privée pour permettre le libre accès; plateformes sécurisées pour partager et comparer les données sur les décisions d'asile entre les juridictions; outils d'IA hébergés localement pour appuyer l'accueil juridique; outils mettant en relation les personnes migrantes avec de l'aide juridique; et indicateurs de la qualité de la représentation juridique.
+
+Les publications issues de ces travaux sont recensées sur la page [Publications](/publications/).
 
 ## Projets
 

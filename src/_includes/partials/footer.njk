@@ -16,9 +16,9 @@
       </ul>
     </div>
     <div class="footer-contact">
-      <p><strong>{{ s.contact.organization }}</strong><br>
-      {%- for line in s.contact.address_lines %}<bdi>{{ line }}</bdi><br>{% endfor %}
-      <a href="mailto:{{ s.contact.email }}">{{ s.contact.email }}</a></p>
+      <p><a href="mailto:{{ s.contact.email }}">{{ s.contact.email }}</a></p>
+      <p>{% if s.contact.address_label %}<span class="footer-label">{{ s.contact.address_label }}</span><br>{% endif %}<strong>{{ s.contact.organization }}</strong><br>
+      {%- for line in s.contact.address_lines %}<bdi>{{ line }}</bdi><br>{% endfor %}</p>
       <ul class="lang-list" aria-label="{{ s.ui.language }}">
         {%- for l in site.languages %}
         {%- set alt = alternates[l.code] if alternates else null %}
@@ -29,6 +29,6 @@
     </div>
   </div>
   <div class="container footer-bottom">
-    <p>© {{ "" | year }} {{ s.footer.copyright }}. {{ s.footer.translation_credit }}</p>
+    <p>© {{ "" | year }} {{ s.footer.copyright }}{% if s.footer.translation_credit %}. {{ s.footer.translation_credit }}{% endif %}</p>
   </div>
 </footer>

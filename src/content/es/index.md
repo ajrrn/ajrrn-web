@@ -6,6 +6,6 @@ intro: La Red de Investigación sobre Justicia Algorítmica para Personas Refugi
 intro_links:
   - label: Sobre la red
     url: /about/
-  - label: Nuestra investigación
+  - label: Nuestros proyectos
     url: /projects/
 ---

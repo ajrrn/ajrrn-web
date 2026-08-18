@@ -1,5 +1,5 @@
 ---
-title: Investigación
+title: Proyectos
 description: Las líneas de investigación y los proyectos de la Red de Investigación sobre Justicia Algorítmica para Personas Refugiadas.
 ---
 Nuestra investigación se organiza en dos líneas que se superponen. Los proyectos concretos se eligen mediante convocatorias anuales de proyectos propuestos por la comunidad, evaluadas por un Comité Consultivo integrado por organizaciones comunitarias aliadas y personas investigadoras con experiencia propia de desplazamiento.
@@ -11,6 +11,8 @@ Utiliza el derecho internacional de los derechos humanos para estudiar y critica
 ### Línea B — Tecnologías que fortalecen los derechos
 
 Crea y evalúa herramientas de código abierto que apoyan a las personas refugiadas, a quienes las defienden y a quienes deciden sobre sus casos: anonimización de decisiones que protege la privacidad para permitir el acceso abierto; plataformas seguras para compartir y comparar datos sobre decisiones de asilo entre jurisdicciones; herramientas de IA alojadas localmente para apoyar la recepción de casos jurídicos; herramientas que conectan a las personas migrantes con ayuda legal; e indicadores de la calidad de la representación legal.
+
+Las publicaciones derivadas de este trabajo figuran en la página de [Publicaciones](/publications/).
 
 ## Proyectos
 

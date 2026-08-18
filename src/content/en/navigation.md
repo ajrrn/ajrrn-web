@@ -13,10 +13,13 @@ main:
         url: /people/
       - label: Partners
         url: /partners/
-  - label: Research
+  - label: Projects
     url: /projects/
-  - label: Publications
-    url: /publications/
+    children:
+      - label: Projects
+        url: /projects/
+      - label: Publications
+        url: /publications/
   - label: Events
     url: /events/
   - label: News
@@ -33,7 +36,7 @@ footer:
     url: /people/
   - label: Partners
     url: /partners/
-  - label: Research
+  - label: Projects
     url: /projects/
   - label: Publications
     url: /publications/

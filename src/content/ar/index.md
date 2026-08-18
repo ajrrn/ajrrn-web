@@ -6,6 +6,6 @@ intro: تجمع شبكة أبحاث العدالة الخوارزمية للاج
 intro_links:
   - label: عن الشبكة
     url: /about/
-  - label: أبحاثنا
+  - label: مشاريعنا
     url: /projects/
 ---

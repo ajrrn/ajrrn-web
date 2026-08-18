@@ -11,21 +11,21 @@ description: Le Réseau de recherche sur la justice algorithmique pour les perso
 # Affiché sur chaque page non anglaise. Les pages en anglais n'ont pas d'avis.
 translation_notice: "Cette page a été traduite de l'anglais à l'aide d'une intelligence artificielle générative (Claude); la version anglaise fait foi. Si vous remarquez une erreur, merci de nous en informer."
 
-# Coordonnées (pied de page + page Contact). À REMPLACER avant le lancement.
+# Coordonnées (pied de page + page Contact).
 contact:
-  email: info@ajrrn.org
+  email: ajrrn@yorku.ca
+  address_label: Adresse de l'hôte
   organization: Refugee Law Lab
   address_lines:
-    - Osgoode Hall Law School / Centre for Refugee Studies
+    - Osgoode Hall Law School
     - Université York
     - 4700 Keele Street
     - Toronto (Ontario) M3J 1P3, Canada
 
 footer:
-  about: L'AJRRN est hébergé par le Refugee Law Lab de l'Université York, à Toronto. Il s'agit d'un partenariat entre des universités, des organisations juridiques et de défense des droits, des groupes œuvrant en technologie et en droits numériques, ainsi que des chercheuses et chercheurs ayant vécu le déplacement.
-  land: L'Université York est située sur les territoires traditionnels de nombreuses nations autochtones, dont les Anishinabek, les Haudenosaunee et les Hurons-Wendat, et est visée par le Traité 13 et les Traités Williams. Cette reconnaissance territoriale est provisoire et sera révisée.
+  about: L'AJRRN est un partenariat entre des universités, des organisations juridiques et de défense des droits, des groupes œuvrant en technologie et en droits numériques, ainsi que des chercheuses et chercheurs ayant vécu le déplacement, qui travaillent ensemble à faire progresser les droits et les intérêts des personnes en déplacement dans un monde où la technologie évolue rapidement. Nous sommes hébergés par le Refugee Law Lab de l'Université York, à Toronto.
+  land: "Le campus Keele de l'Université York se trouve sur les terres visées par le Traité no 13 (Toronto Purchase Treaty, No. 13) et sur le territoire traditionnel des Hurons-Wendat et des Haudenosaunee. Nous sommes reconnaissants de pouvoir apprendre, travailler et nous épanouir sur ces terres, et nous nous engageons à connaître la vérité et à participer activement au processus de réconciliation."
   copyright: Réseau de recherche sur la justice algorithmique pour les personnes réfugiées (AJRRN)
-  translation_credit: "Les versions française, espagnole et arabe de ce site ont été traduites de l'anglais à l'aide d'une intelligence artificielle générative (Claude) et sont révisées par notre équipe. Si vous remarquez une erreur, merci de nous en informer."
 
 ui:
   skip_to_content: Aller au contenu principal
