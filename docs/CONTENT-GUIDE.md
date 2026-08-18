@@ -177,11 +177,18 @@ the English site and `fr.ajrrn.org/about/` on the French one. External links
 
 ## Site-wide text — `site.md`
 
-Everything a visitor reads that is not part of a page: site name, tagline,
-contact block, footer paragraphs, land acknowledgement, and all interface
-labels (`ui:` — "Read more", "Upcoming events", …). The `translation_notice`
-value is displayed at the top of every page of that language (empty in
-English).
+Everything a visitor reads that is not part of a page:
+
+| Key | Where it appears |
+|---|---|
+| `name`, `full_name`, `tagline`, `description` | browser tab titles, link previews, defaults |
+| `translation_notice` | banner at the top of every page of that language (empty in English) |
+| `contact.email`, `contact.address_label`, `contact.organization`, `contact.address_lines` | footer contact column and the Contact page |
+| `footer.land` | land acknowledgement band above the copyright |
+| `footer.copyright` | copyright line |
+| `ui.*` | interface labels — "Read more", "Upcoming events", "Menu", "Site links", … |
+
+Change wording here, not in the templates.
 
 ## Links and images inside markdown
 

@@ -42,8 +42,11 @@ icons.
 
 ## Layout
 
-- One container (max 72rem), header with logo + menu + language switcher,
-  footer with about / links / contact.
+- One container (max 75rem). Header: SVG logo (7.15rem tall on desktop,
+  5rem on phones, 4.25rem under 30em) + menu + language switcher, all on one
+  line down to ~832px in every language. Footer: logo · site links · contact
+  (email + host address), then a full-width land-acknowledgement band, then
+  the copyright line. The language switcher lives only in the header.
 - Content pages: optional section sub-menu (About · People · Partners; Projects · Publications), an
   h1 with a purple rule, prose.
 - Lists (news, events, …) are simple bordered rows: date · title · summary.

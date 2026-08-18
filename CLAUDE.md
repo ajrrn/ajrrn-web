@@ -22,8 +22,16 @@ This is the AJRRN website: Eleventy static site + Cloudflare Worker. Read
 - **Accessibility and RTL:** use logical CSS properties; test Arabic pages;
   keep `alt` text and headings meaningful.
 - Run `npm run check` before finishing any change (build + Worker tests +
-  link/translation-completeness check). For visual changes also run
-  `npm run test:screenshots` and look at phone/tablet/desktop output.
+  link/translation-completeness check + axe accessibility audit). For visual
+  changes also run `npm run test:screenshots` and look at the 320/390/820/1366px
+  output in every language (Arabic is RTL).
+- People and partners have no pages of their own: names link outward via
+  `link:`. Don't add internal links to `/people/<slug>/`.
+- Headings inside markdown bodies start at `##` (the page title is the h1).
+- The header/footer logo is `src/assets/img/ajrrn-logo-colour.svg` (vector);
+  don't reintroduce the PNG in templates.
+- `docs/LAUNCH-CHECKLIST.md` tracks what is still placeholder — keep it current
+  when you replace placeholder content.
 - Don't commit `initial_docs/`, `initial_instructions.md`, `_site/`, `screenshots/`
   (all in `.gitignore`).
 

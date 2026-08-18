@@ -59,7 +59,14 @@ Rules for anyone (human or AI) translating:
 | forced migration | migration forcée | migración forzada | الهجرة القسرية |
 | displaced people | personnes déplacées | personas desplazadas | الأشخاص النازحون |
 | people on the move | personnes en déplacement | personas en movimiento | الأشخاص المتنقلون |
+| research streams (Stream A / B) | axes de recherche (Axe A / B) | líneas de investigación (Línea A / B) | المسارات البحثية (المسار أ / ب) |
+| Consultative Committee | Comité consultatif | Comité Consultivo | اللجنة الاستشارية |
+| open access / open source | libre accès / (outils) libres | acceso abierto / código abierto | الوصول المفتوح / مفتوحة المصدر |
+| SSHRC | CRSH (Conseil de recherches en sciences humaines du Canada) | SSHRC (Consejo de Investigación en Ciencias Sociales y Humanidades de Canadá) | SSHRC (مجلس أبحاث العلوم الاجتماعية والإنسانية في كندا) |
+| Menu: About / Projects / Publications / Events / News / Opportunities / Contact | À propos / Projets / Publications / Événements / Actualités / Occasions / Contact | Sobre la red / Proyectos / Publicaciones / Eventos / Noticias / Oportunidades / Contacto | عن الشبكة / المشاريع / المنشورات / الفعاليات / الأخبار / الفرص / اتصل بنا |
+| People / Partners (About sub-menu) | Notre équipe / Partenaires | Personas / Organizaciones aliadas | الفريق / الشركاء |
+| Host address | Adresse de l'hôte | Dirección de la institución anfitriona | عنوان الجهة المضيفة |
+| "(placeholder)" | "(provisoire)" | "(provisional)" | "(نص مؤقت)" |
 
-(The table reflects the choices made in the first translation pass; check the
-translated files themselves for the authoritative wording and update this
-table when you change a term.)
+(The table reflects the choices made so far; the translated files themselves
+are authoritative — update this table when you change a term.)

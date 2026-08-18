@@ -44,8 +44,12 @@ GitHub repo ──push──▶ Cloudflare Workers Builds
   The HTML output is otherwise identical — the folders are always `/<lang>/`.
   A transform in `eleventy.config.js` rewrites every root-relative `href`/`src`
   accordingly, so authors can always write `/about/` in markdown.
+- People and partners are listed on their section pages and link outward
+  (`link:`); a preprocessor in `eleventy.config.js` sets `permalink: false` on
+  those items so they don't get pages of their own.
 - Per-language `sitemap.xml`, `robots.txt` (disallow-all in preview builds) and
   `404.html` are generated. Preview builds add `<meta name="robots" content="noindex">`.
+- `npm run build` empties `_site/` first (Eleventy does not remove stale output).
 
 ## Serving (Cloudflare Worker)
 
@@ -67,7 +71,11 @@ redirects the asset server emits (trailing slashes), and adds security
 headers (CSP allowing only same-origin resources, no framing, etc.).
 
 `tests/worker.integration.test.js` runs the real Worker in Miniflare against
-`_site/` to check all of the above end to end.
+`_site/` to check all of the above end to end. `scripts/check-links.js`
+verifies every internal link/asset resolves and that every English page has a
+counterpart in every language; `scripts/a11y.js` runs an axe-core audit on
+every page; `scripts/screenshots.js` captures 320/390/820/1366px screenshots.
+`npm run check` runs build + tests + link check + a11y, and CI runs the same.
 
 ## Environments
 

@@ -1,15 +1,16 @@
 # Launch checklist
 
-Things that are placeholders or assumptions in the first version and should be
-confirmed before (or soon after) the site goes public.
+Things that are still placeholders or assumptions and should be confirmed
+before (or soon after) the site goes public. Last reviewed 2026-08-18.
 
 ## Content
 - [ ] `contact.email` in each `site.md` is `ajrrn@yorku.ca` — make sure the mailbox is monitored.
 - [ ] Land acknowledgement (`footer.land`) uses York University's wording; the French/Spanish/Arabic renderings were AI-translated — have them checked.
-- [ ] Funder acknowledgement (e.g. SSHRC) — not yet mentioned anywhere; add to About / footer once confirmed.
-- [ ] `people/` — currently lists the Director, the Stream A lead and the Project Manager with external links, plus one "Academic affiliate (placeholder)" entry; replace the placeholder with real affiliates (with consent).
-- [ ] `partners/` — currently lists the three core partners with links; confirm each partner agrees to be listed and how it wants to be named/linked, then add the others.
-- [ ] Remove or replace all files marked "(placeholder)" in news, events, publications, opportunities, projects.
+- [ ] Funder acknowledgement — SSHRC is named in the June 2026 news item; decide whether to add a standing acknowledgement to the About page or footer.
+- [ ] `people/` — lists the Director, the Stream A lead and the Project Manager (external links, project-manager email shown), plus one "Academic affiliate (placeholder)" entry; replace the placeholder with real affiliates (with consent).
+- [ ] `partners/` — lists the three core partners with links; confirm each partner agrees to be listed and how it wants to be named/linked, then add the others.
+- [ ] Still placeholders: `publications/` (2 sample entries), `opportunities/` (3 sample entries), `projects/` (2 sample entries). Replace them with real items — or delete them, in which case the list pages show a "nothing here yet" note.
+- [ ] Events: the 22 Sept 2026 launch entry has no registration link yet (`link: ""`); add it when available.
 - [ ] Privacy policy (`privacy/index.md`) — review with the university's privacy office if required; it currently states: no cookies, no analytics, no third-party embeds, Cloudflare as host.
 - [ ] Home page intro text and the About page — reviewed by the team.
 - [ ] Translations — human review of the French, Spanish and Arabic files, especially `site.md` (interface labels) and the About/Privacy pages.

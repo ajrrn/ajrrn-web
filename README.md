@@ -29,7 +29,7 @@ npm install          # once
 npm run dev          # http://localhost:8080/en/  (live reload; language in the path)
 npm run preview      # build + run the real Worker locally with wrangler
 npm run check        # build + Worker tests + link check + axe accessibility audit
-npm run test:screenshots   # phone/tablet/desktop screenshots into ./screenshots
+npm run test:screenshots   # 320/390/820/1366px screenshots into ./screenshots
 npm run test:a11y    # axe-core audit of every page (also part of check)
 ```
 
@@ -42,7 +42,7 @@ uses to build).
 src/content/<lang>/     all content (markdown) — en, fr, es, ar
 src/_includes/          Nunjucks layouts, views and partials
 src/_data/              site settings + loaders for site.md / navigation.md
-src/assets/             CSS, JS, fonts (Freeman, OFL), images (logo, icons)
+src/assets/             CSS, JS, fonts (Freeman, OFL), images (SVG logo, icons, OG image)
 worker/                 Cloudflare Worker (router.js is pure logic, tested)
 tests/                  node:test unit tests + Miniflare integration tests
 scripts/                link checker, screenshot script
@@ -59,6 +59,16 @@ wrangler.jsonc          Cloudflare Workers configuration
 - [docs/CLOUDFLARE-SETUP.md](docs/CLOUDFLARE-SETUP.md) — step-by-step Cloudflare setup (one-off)
 - [docs/DESIGN.md](docs/DESIGN.md) — colours, type, layout rules
 - [docs/WORKFLOW.md](docs/WORKFLOW.md) — branch → preview → pull request → production
+- [docs/LAUNCH-CHECKLIST.md](docs/LAUNCH-CHECKLIST.md) — what is still placeholder / to confirm before launch
+
+## Status (2026-08-18)
+
+First version complete and pushed; Cloudflare not yet connected (see
+`docs/CLOUDFLARE-SETUP.md`). Real content so far: home, About, People (3
+staff), Partners (3), Projects page text, Contact, Privacy policy (draft), one
+news item (SSHRC grant), one event (launch, 22 Sept 2026). Publications,
+opportunities and project *entries* are still sample placeholders — see
+`docs/LAUNCH-CHECKLIST.md`.
 
 ## Licence
 
