@@ -20,6 +20,17 @@ From the AJRRN logo style card:
 Mint (`#66cc99`) has ~2:1 contrast on white, so it is never used for text or
 essential meaning — only as a small decorative accent.
 
+## Logo
+
+`src/assets/img/ajrrn-logo-colour.svg` is a vector version of the colour logo,
+extracted from the designer's style-card PDF (the logo is vector in the PDF;
+converted with `pdftocairo -svg`, cropped and optimised with svgo). It is
+crisp at any size or zoom. If the designer supplies a native SVG export of the
+logo (text converted to outlines), drop it in under the same file name — it
+will be smaller and cleaner than the extracted one (~400 KB uncompressed,
+~17 KB over the wire). The PNG variants remain for the Open Graph image and
+icons.
+
 ## Type
 
 - **Headings:** Freeman (the logo typeface), self-hosted from

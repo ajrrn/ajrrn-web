@@ -18,6 +18,7 @@ confirmed before (or soon after) the site goes public.
 ## Technical
 - [ ] Cloudflare setup complete (docs/CLOUDFLARE-SETUP.md), all five hostnames working with HTTPS.
 - [ ] Branch protection on `main`.
+- [ ] Ask the designer for native SVG exports of the logo (colour and white, text as outlines) and a square mark for the favicon; replace `src/assets/img/ajrrn-logo-colour.svg` (see docs/DESIGN.md).
 - [ ] Open Graph image (`src/assets/img/og-image.png`) — replace with a designed one if desired.
 - [ ] Verify search engines: production `robots.txt` allows crawling; each language's `sitemap.xml` is listed there.
 - [ ] Optional: email/newsletter, social links — the site intentionally has none; decide whether to add plain links (no embeds).
