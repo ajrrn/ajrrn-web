@@ -18,6 +18,8 @@ jobs:
           node-version-file: .node-version
           cache: npm
       - run: npm ci
+      - name: Install Chromium for the accessibility audit
+        run: npx playwright install --with-deps chromium
       - name: Build (preview mode) and check
         run: npm run check
       - name: Build (production mode) and check links

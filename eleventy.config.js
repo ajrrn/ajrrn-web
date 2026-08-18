@@ -195,6 +195,13 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("startsWith", (s, prefix) => typeof s === "string" && s.startsWith(prefix));
   eleventyConfig.addFilter("keys", (obj) => Object.keys(obj || {}));
   eleventyConfig.addFilter("year", () => new Date().getFullYear());
+  // Human-readable form of a URL for link text: no scheme, no trailing slash, shortened.
+  eleventyConfig.addFilter("displayUrl", (url, max = 48) => {
+    if (typeof url !== "string") return url;
+    let text = url.replace(/^https?:\/\//, "").replace(/\/$/, "");
+    if (text.length > max) text = text.slice(0, max - 1) + "…";
+    return text;
+  });
 
   // Navigation helpers (kept in JS because Nunjucks `set` does not escape loops).
   const inItem = (item, pageUrl, home) => {

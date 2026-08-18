@@ -28,6 +28,7 @@ footer:
   copyright: Algorithmic Justice for Refugees Research Network
 
 ui:
+  footer_links: Site links
   skip_to_content: Skip to main content
   menu: Menu
   close: Close

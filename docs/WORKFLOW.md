@@ -33,7 +33,7 @@ English production behaviour; use `npm run dev` to browse all languages).
 ## Checks you can run
 
 ```bash
-npm run check              # build + unit/integration tests + link check
+npm run check              # build + tests + link check + accessibility audit
 npm run test:screenshots   # writes phone/tablet/desktop screenshots to ./screenshots
 ```
 

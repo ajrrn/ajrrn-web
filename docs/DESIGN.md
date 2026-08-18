@@ -42,11 +42,31 @@ essential meaning — only as a small decorative accent.
 - RTL: the stylesheet uses logical properties (`margin-inline-start`, …) so
   Arabic mirrors correctly with `dir="rtl"` on `<html>`.
 
-## Accessibility checklist
+## Accessibility
 
-- Skip link, landmark elements, `aria-current` on active nav items,
-  `aria-expanded` on the menu button, visible focus outlines.
-- Colour contrast ≥ 4.5:1 for all text.
+Automated: `npm run test:a11y` runs axe-core (WCAG 2.1 A/AA + best
+practices) on every page in every language, on desktop and phone viewports
+(with the mobile menu open too). It is part of `npm run check`.
+
+Manual checklist (things automated tools cannot judge):
+
+- Skip link; `header`/`nav`/`main`/`footer` landmarks; every `nav` has an
+  `aria-label`; footer columns have visually-hidden headings.
+- `aria-current` on the active menu item and language; `aria-expanded` /
+  `aria-controls` on the menu button; the menu closes with Escape.
+- Focus is always visible: 3px purple outline with an offset (≥ 3:1 against
+  white and against the purple button because of the white gap).
+- Colour contrast ≥ 4.5:1 for all text (mint is decorative only; the
+  "muted" grey is `#616166`, the tag green `#1f6b48`).
 - Everything works without JavaScript (the menu is simply expanded).
-- Images have `alt` text; the logo alt is the full network name.
-- `lang` and `dir` on every page; `hreflang` alternates in `<head>`.
+- Images have `alt` text; the header logo's alt is the full network name;
+  the footer logo is decorative (`alt=""`).
+- `lang` and `dir` on every page; language links carry `lang`/`hreflang`;
+  `hreflang` alternates in `<head>`.
+- Headings follow a strict outline (h1 → h2 → h3). Markdown authors: start
+  body headings at `##`.
+- Link text is meaningful (URLs are shown shortened, never as raw text of
+  100 characters). External links open in the same tab.
+- Text reflows to 320px wide without horizontal scrolling; layout uses
+  relative units so browser zoom / text-size settings work.
+- No motion, no autoplay, no time limits, no justified text.

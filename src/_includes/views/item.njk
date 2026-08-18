@@ -9,30 +9,31 @@
     <dl class="meta">
       {%- if section == "news" %}
       <dt>{{ s.ui.published }}</dt><dd><time datetime="{{ date | isoDate }}">{{ date | localeDate(lang) }}</time></dd>
+      {%- if link %}<dt>{{ s.ui.learn_more }}</dt><dd><a href="{{ link }}">{{ link | displayUrl }}</a></dd>{% endif %}
       {%- elif section == "events" %}
       <dt>{{ s.ui.when }}</dt><dd><time datetime="{{ date | isoDate }}">{{ date | localeDate(lang) }}</time>{% if end %} – <time datetime="{{ end | isoDate }}">{{ end | localeDate(lang) }}</time>{% endif %}{% if time %}, {{ time }}{% endif %}</dd>
       {%- if location %}<dt>{{ s.ui.where }}</dt><dd>{{ location }}</dd>{% endif %}
-      {%- if link %}<dt>{{ s.ui.event_link }}</dt><dd><a href="{{ link }}">{{ link }}</a></dd>{% endif %}
+      {%- if link %}<dt>{{ s.ui.event_link }}</dt><dd><a href="{{ link }}">{{ link | displayUrl }}</a></dd>{% endif %}
       {%- elif section == "publications" %}
       {%- if authors %}<dt>{{ s.ui.authors }}</dt><dd>{{ authors }}</dd>{% endif %}
       {%- if venue %}<dt>{{ s.ui.published }}</dt><dd>{{ venue }}, <time datetime="{{ date | isoDate }}">{{ date | localeDate(lang, "month") }}</time></dd>{% endif %}
-      {%- if link %}<dt>{{ s.ui.publication_link }}</dt><dd><a href="{{ link }}">{{ link }}</a></dd>{% endif %}
+      {%- if link %}<dt>{{ s.ui.publication_link }}</dt><dd><a href="{{ link }}">{{ link | displayUrl }}</a></dd>{% endif %}
       {%- elif section == "opportunities" %}
       {%- if category %}<dt>{{ s.ui.category }}</dt><dd>{{ s.ui["opportunity_" + category] or category }}</dd>{% endif %}
       {%- if location %}<dt>{{ s.ui.location }}</dt><dd>{{ location }}</dd>{% endif %}
       {%- if deadline %}<dt>{{ s.ui.deadline }}</dt><dd><time datetime="{{ deadline | isoDate }}">{{ deadline | localeDate(lang) }}</time></dd>{% endif %}
-      {%- if link %}<dt>{{ s.ui.learn_more }}</dt><dd><a href="{{ link }}">{{ link }}</a></dd>{% endif %}
+      {%- if link %}<dt>{{ s.ui.learn_more }}</dt><dd><a href="{{ link }}">{{ link | displayUrl }}</a></dd>{% endif %}
       {%- elif section == "projects" %}
       {%- if stream %}<dt>{{ s.ui.research_streams }}</dt><dd>{{ s.ui["stream_" + (stream | lower)] or stream }}</dd>{% endif %}
       {%- if status %}<dt>{{ s.ui.status }}</dt><dd>{{ status }}</dd>{% endif %}
       {%- elif section == "people" %}
       {%- if role %}<dt>{{ s.ui.role }}</dt><dd>{{ role }}</dd>{% endif %}
       {%- if affiliation %}<dt>{{ s.ui.affiliation }}</dt><dd>{{ affiliation }}</dd>{% endif %}
-      {%- if link %}<dt>{{ s.ui.website }}</dt><dd><a href="{{ link }}">{{ link }}</a></dd>{% endif %}
+      {%- if link %}<dt>{{ s.ui.website }}</dt><dd><a href="{{ link }}">{{ link | displayUrl }}</a></dd>{% endif %}
       {%- elif section == "partners" %}
       {%- if type %}<dt>{{ s.ui.category }}</dt><dd>{{ type }}</dd>{% endif %}
       {%- if location %}<dt>{{ s.ui.location }}</dt><dd>{{ location }}</dd>{% endif %}
-      {%- if link %}<dt>{{ s.ui.website }}</dt><dd><a href="{{ link }}">{{ link }}</a></dd>{% endif %}
+      {%- if link %}<dt>{{ s.ui.website }}</dt><dd><a href="{{ link }}">{{ link | displayUrl }}</a></dd>{% endif %}
       {%- endif %}
     </dl>
     {{ content | safe }}

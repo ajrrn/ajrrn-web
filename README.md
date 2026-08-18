@@ -28,8 +28,9 @@ The site is a plain, static, multilingual website:
 npm install          # once
 npm run dev          # http://localhost:8080/en/  (live reload; language in the path)
 npm run preview      # build + run the real Worker locally with wrangler
-npm run check        # build + Worker tests + internal link check
+npm run check        # build + Worker tests + link check + axe accessibility audit
 npm run test:screenshots   # phone/tablet/desktop screenshots into ./screenshots
+npm run test:a11y    # axe-core audit of every page (also part of check)
 ```
 
 Requires Node.js 20 or newer (`.node-version` says 22, which is what Cloudflare

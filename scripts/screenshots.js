@@ -10,6 +10,7 @@ const outDir = process.argv[3] || "screenshots";
 const pages = (process.env.PAGES || "/,/about/,/people/,/projects/,/events/,/news/,/opportunities/,/contact/,/privacy/,/nope/").split(",");
 const langs = (process.env.LANGS || "en,fr,es,ar").split(",");
 const viewports = {
+  narrow: { width: 320, height: 568, deviceScaleFactor: 2, isMobile: true, hasTouch: true },
   phone: { width: 390, height: 844, deviceScaleFactor: 2, isMobile: true, hasTouch: true },
   tablet: { width: 820, height: 1180, deviceScaleFactor: 2 },
   desktop: { width: 1366, height: 900 },

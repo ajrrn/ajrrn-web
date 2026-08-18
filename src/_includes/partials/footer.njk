@@ -4,30 +4,36 @@
 <footer class="site-footer">
   <div class="container footer-grid">
     <div class="footer-about">
-      <img src="/assets/img/ajrrn-logo-colour.png" alt="" width="260" height="124" class="footer-logo" loading="lazy" decoding="async">
+      <img src="/assets/img/ajrrn-logo-colour.png" alt="" width="258" height="120" class="footer-logo" loading="lazy" decoding="async">
       <p>{{ s.footer.about }}</p>
-      {%- if s.footer.land %}<p class="footer-land">{{ s.footer.land }}</p>{% endif %}
     </div>
-    <div class="footer-links">
+    <nav class="footer-links" aria-label="{{ s.ui.footer_links }}">
+      <h2 class="visually-hidden">{{ s.ui.footer_links }}</h2>
       <ul>
         {%- for item in nav.footer %}
         <li><a href="{{ item.url | href(lang) }}">{{ item.label }}</a></li>
         {%- endfor %}
       </ul>
-    </div>
+    </nav>
     <div class="footer-contact">
+      <h2 class="visually-hidden">{{ s.ui.contact_us }}</h2>
       <p><a href="mailto:{{ s.contact.email }}">{{ s.contact.email }}</a></p>
       <p>{% if s.contact.address_label %}<span class="footer-label">{{ s.contact.address_label }}</span><br>{% endif %}<strong>{{ s.contact.organization }}</strong><br>
       {%- for line in s.contact.address_lines %}<bdi>{{ line }}</bdi><br>{% endfor %}</p>
-      <ul class="lang-list" aria-label="{{ s.ui.language }}">
-        {%- for l in site.languages %}
-        {%- set alt = alternates[l.code] if alternates else null %}
-        {%- set target = alt.url if alt else ("/" + l.code + "/") %}
-        <li><a href="{{ target | href(lang) }}" lang="{{ l.code }}" hreflang="{{ l.code }}"{% if l.code == lang %} aria-current="true"{% endif %}>{{ l.name }}</a></li>
-        {%- endfor %}
-      </ul>
+      <nav aria-label="{{ s.ui.language }}">
+        <ul class="lang-list">
+          {%- for l in site.languages %}
+          {%- set alt = alternates[l.code] if alternates else null %}
+          {%- set target = alt.url if alt else ("/" + l.code + "/") %}
+          <li><a href="{{ target | href(lang) }}" lang="{{ l.code }}" hreflang="{{ l.code }}"{% if l.code == lang %} aria-current="true"{% endif %}>{{ l.name }}</a></li>
+          {%- endfor %}
+        </ul>
+      </nav>
     </div>
   </div>
+  {%- if s.footer.land %}
+  <div class="container footer-land"><p>{{ s.footer.land }}</p></div>
+  {%- endif %}
   <div class="container footer-bottom">
     <p>© {{ "" | year }} {{ s.footer.copyright }}{% if s.footer.translation_credit %}. {{ s.footer.translation_credit }}{% endif %}</p>
   </div>
