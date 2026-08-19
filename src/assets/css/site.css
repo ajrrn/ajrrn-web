@@ -374,9 +374,9 @@ html[dir="rtl"] .back-link a::before { content: "\2192 "; }
   padding-block: 2.5rem 2rem;
 }
 .footer-logo { width: 15rem; height: auto; margin: 0; }
-/* Rows of four: About · People · Partners · Funders / Projects · Publications · News & events · Opportunities / Contact · Privacy policy */
-.footer-links ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.4rem 1.5rem; }
-.footer-links li { margin: 0; }
+/* Three columns, filled top to bottom: About · People · Partners · Funders | Projects · Publications · News & events · Opportunities | Contact · Privacy policy */
+.footer-links ul { list-style: none; margin: 0; padding: 0; columns: 3; column-gap: 1.5rem; }
+.footer-links li { break-inside: avoid; margin-bottom: 0.4rem; }
 .footer-links a { color: var(--ink-soft); text-decoration: none; }
 .footer-links a:hover { color: var(--purple); text-decoration: underline; }
 .footer-land { border-top: 1px solid var(--rule); padding-block: 1.25rem; font-size: 0.85rem; color: var(--muted); }
@@ -386,7 +386,7 @@ html[dir="rtl"] .back-link a::before { content: "\2192 "; }
 
 @media (max-width: 52em) {
   .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
-  .footer-links ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .footer-links ul { columns: 2; }
 }
 @media (max-width: 30em) {
   body { font-size: 1rem; }
