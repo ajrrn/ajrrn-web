@@ -8,11 +8,19 @@ This is the AJRRN website: Eleventy static site + Cloudflare Worker. Read
 
 - **Content changes go in `src/content/<lang>/` only.** Templates, CSS and
   the Worker rarely need to change for content work.
-- **Four languages, always.** Any change to English content must be mirrored
-  in `fr/`, `es/`, `ar/` (same file names, same front-matter keys, translated
-  values). Translations are done by you (Claude) and committed as markdown;
+- **Four languages, always — in the same change.** Whenever you change
+  anything a visitor can read on the English site (a page body, front matter,
+  a new or deleted person/partner/news/event file, a menu label, a `site.md`
+  interface string, `alt` text…), make the equivalent change in `fr/`, `es/`
+  and `ar/` *as part of the same task*, without being asked: same file names,
+  same front-matter keys, translated values. Do this by default even when the
+  request only mentions "the site" or "the English page". The **only**
+  exception is when the user explicitly says not to translate (e.g. "English
+  only for now") — then say in your summary that the other languages are out
+  of sync. Translations are done by you (Claude) and committed as markdown;
   never add a translation plugin or service. Keep the terminology table in
-  `docs/TRANSLATION.md` up to date.
+  `docs/TRANSLATION.md` up to date, and run `npm run check` (its
+  completeness check catches missing files, but not untranslated text).
 - **No third-party services** other than GitHub and Cloudflare: no analytics,
   fonts from CDNs, embeds, forms posting elsewhere, CDN scripts. The Content
   Security Policy in `worker/index.js` only allows same-origin resources.

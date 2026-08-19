@@ -5,6 +5,11 @@ All content lives in `src/content/<language>/`, one folder per language:
 the same structure and the same file names.** The file name is what ties the
 translations of a page together, so never rename a file in one language only.
 
+**Any edit to `en/` is mirrored in `fr/`, `es/` and `ar/` in the same
+change** — new files, deleted files, changed text, changed front matter. When
+the edit is made with Claude Code this is done automatically unless you ask
+for English only; see [TRANSLATION.md](TRANSLATION.md).
+
 ```
 src/content/en/
 ├── site.md              site-wide text: name, contact, footer, interface labels
@@ -129,7 +134,7 @@ title: Jane Doe           # same as name
 role: Project Director
 affiliation: Osgoode Hall Law School, York University
 email: jane@example.org   # optional, shown as a mailto link
-group: staff              # staff | affiliate  (controls which list)
+group: staff              # staff | affiliate  (controls which list: "Team" or "Research affiliates")
 link: https://…           # external profile page; the name links there (optional)
 order: 1                  # optional; lower numbers first
 ---

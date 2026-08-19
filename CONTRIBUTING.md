@@ -22,10 +22,10 @@ are produced with generative AI and reviewed by our team.
   listed, how the network describes itself — rest with the AJRRN team. Pull
   requests that change wording are very welcome; ones that add or remove
   substantive content will usually be discussed in an issue first.
-- Please keep the four language versions consistent: a fix to the English
-  text normally needs the same fix in `fr/`, `es/` and `ar/`
-  (see [docs/TRANSLATION.md](docs/TRANSLATION.md)). If you can only correct
-  one language, that's fine — say so in the PR and we'll do the rest.
+- Please keep the four language versions consistent: a change to the English
+  text needs the same change in `fr/`, `es/` and `ar/` in the same pull
+  request (see [docs/TRANSLATION.md](docs/TRANSLATION.md)). If you can only
+  correct one language, that's fine — say so in the PR and we'll do the rest.
 - We do not add third-party services (analytics, embeds, external scripts or
   fonts) — the site's privacy policy promises there are none.
 - Design changes should follow [docs/DESIGN.md](docs/DESIGN.md): plain,

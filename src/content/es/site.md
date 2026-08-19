@@ -54,7 +54,7 @@ ui:
   location: Lugar
   website: Sitio web
   team: Equipo
-  affiliates: Personas académicas afiliadas
+  affiliates: Personas investigadoras afiliadas
   research_streams: Líneas de investigación
   stream_a: "Línea A — Derechos humanos y gobernanza digital de las fronteras"
   stream_b: "Línea B — Tecnologías que fortalecen los derechos"

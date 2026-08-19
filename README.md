@@ -21,6 +21,8 @@ The site is a plain, static, multilingual website:
 - **Translations** into French, Spanish and Arabic are produced with generative
   AI (Claude) from the English source and stored as ordinary markdown files —
   see [docs/TRANSLATION.md](docs/TRANSLATION.md). Every translated page says so.
+  Every change to the English content is mirrored in the three other languages
+  in the same change (Claude does this automatically unless told not to).
 
 ## Quick start
 
@@ -68,7 +70,7 @@ Workers Builds; `main` deploys to production, other branches get preview URLs
 (`scripts/smoke-production.sh` checks the live site). The repository is
 public and `main` is protected: all changes go through pull requests with
 passing checks (see [docs/WORKFLOW.md](docs/WORKFLOW.md)). Real content so far: home, About, People (3
-staff), Partners (3), Projects page text, Contact, Privacy policy (draft), one
+staff + 12 research affiliates), Partners (12), Projects page text, Contact, Privacy policy (draft), one
 news item (SSHRC grant), one event (launch, 22 Sept 2026). Publications,
 opportunities and project *entries* are still sample placeholders — see
 `docs/LAUNCH-CHECKLIST.md`.

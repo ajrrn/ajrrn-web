@@ -54,7 +54,7 @@ ui:
   location: Lieu
   website: Site Web
   team: Équipe
-  affiliates: Membres universitaires affiliés
+  affiliates: Chercheuses et chercheurs affiliés
   research_streams: Axes de recherche
   stream_a: "Axe A — Droits de la personne et gouvernance numérique des frontières"
   stream_b: "Axe B — Technologies favorables aux droits"

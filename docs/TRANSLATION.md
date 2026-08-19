@@ -26,10 +26,22 @@ correction of the translated files is always welcome — just edit the file.
 
 ## Keeping the languages in sync
 
-When you change English content, make the same change in the other three
-folders. The easiest way, in a Claude Code session in this repository:
+**Every change to the English site is also a change to the French, Spanish
+and Arabic sites.** Whenever English content changes — a page body, a
+front-matter value, a new or removed file (person, partner, news item, event…),
+a menu label, an interface string in `site.md` — the same change is made in
+`fr/`, `es/` and `ar/` in the same commit / pull request, so that the four
+sites never drift apart.
 
-> Translate the changes I just made in `src/content/en/news/2026-10-x.md` into
+In a Claude Code session this happens automatically: Claude is instructed
+(see `CLAUDE.md`) to translate and apply any English change to the other three
+languages as part of the same task, without being asked. You do not need to
+request it. If you genuinely want a change in English only (for example a
+draft you will finish later), say so explicitly — "English only, don't
+translate yet" — and Claude will leave the other languages alone and tell you
+they are out of sync. To catch up later:
+
+> Translate the changes made in `src/content/en/news/2026-10-x.md` into
 > French, Spanish and Arabic, following docs/TRANSLATION.md, and create/update
 > the matching files.
 
@@ -47,7 +59,9 @@ Rules for anyone (human or AI) translating:
    automatically (`dir="rtl"`). Use Western digits (0–9) unless there is a
    reason not to. Dates are formatted per language by the build.
 7. Run `npm run check`: the link checker fails if a page exists in English but
-   not in another language.
+   not in another language. (It cannot tell whether the *text* inside a file
+   is up to date — that is why translations are made in the same change as
+   the English edit.)
 
 ## Terminology (agreed choices — extend as needed)
 
@@ -65,6 +79,8 @@ Rules for anyone (human or AI) translating:
 | SSHRC | CRSH (Conseil de recherches en sciences humaines du Canada) | SSHRC (Consejo de Investigación en Ciencias Sociales y Humanidades de Canadá) | SSHRC (مجلس أبحاث العلوم الاجتماعية والإنسانية في كندا) |
 | Menu: About / Projects / Publications / Events / News / Opportunities / Contact | À propos / Projets / Publications / Événements / Actualités / Occasions / Contact | Sobre la red / Proyectos / Publicaciones / Eventos / Noticias / Oportunidades / Contacto | عن الشبكة / المشاريع / المنشورات / الفعاليات / الأخبار / الفرص / اتصل بنا |
 | People / Partners (About sub-menu) | Notre équipe / Partenaires | Personas / Organizaciones aliadas | الفريق / الشركاء |
+| Research affiliates (People page heading) | Chercheuses et chercheurs affiliés | Personas investigadoras afiliadas | الباحثون المنتسبون |
+| Co-applicant (role on the People page) | Cocandidat·e | Cosolicitante | مقدِّم/ة طلب مشارك/ة |
 | Host address | Adresse de l'hôte | Dirección de la institución anfitriona | عنوان الجهة المضيفة |
 | "(placeholder)" | "(provisoire)" | "(provisional)" | "(نص مؤقت)" |
 

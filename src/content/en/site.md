@@ -54,7 +54,7 @@ ui:
   location: Location
   website: Website
   team: Team
-  affiliates: Academic affiliates
+  affiliates: Research affiliates
   research_streams: Research streams
   stream_a: "Stream A — Human rights and digital border governance"
   stream_b: "Stream B — Rights‑enhancing technologies"
