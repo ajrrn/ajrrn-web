@@ -63,7 +63,7 @@ wrangler.jsonc          Cloudflare Workers configuration
 - [docs/WORKFLOW.md](docs/WORKFLOW.md) — branch → preview → pull request → production
 - [docs/LAUNCH-CHECKLIST.md](docs/LAUNCH-CHECKLIST.md) — what is still placeholder / to confirm before launch
 
-## Status (2026-08-18)
+## Status (2026-08-19)
 
 First version live at ajrrn.org (+ fr/es/ar subdomains) via Cloudflare
 Workers Builds; `main` deploys to production, other branches get preview URLs
@@ -72,8 +72,8 @@ public and `main` is protected: all changes go through pull requests with
 passing checks (see [docs/WORKFLOW.md](docs/WORKFLOW.md)). Real content so far: home, About, People (3
 staff + 13 research affiliates), Partners (12), Projects page text, Contact, Privacy policy, Funders, one
 news item (SSHRC grant), one event (launch, 22 Sept 2026). Two real publications (Bill C‑2 consultation report, *Border Necrotechnics*);
-three opportunities and one project (Refugee Law Lab Portal); no placeholder
-entries remain — see `docs/LAUNCH-CHECKLIST.md` for what is still to confirm.
+four opportunities (including the email-list sign-up) and one project (Refugee
+Law Lab Portal); no placeholder entries remain — see `docs/LAUNCH-CHECKLIST.md` for what is still to confirm.
 
 ## Contributing and security
 

@@ -46,8 +46,8 @@ This is the AJRRN website: Eleventy static site + Cloudflare Worker. Read
   items without asking.
 - The header/footer logo is `src/assets/img/ajrrn-logo-colour.svg` (vector);
   don't reintroduce the PNG in templates.
-- `docs/LAUNCH-CHECKLIST.md` tracks what is still placeholder — keep it current
-  when you replace placeholder content.
+- `docs/LAUNCH-CHECKLIST.md` tracks what is still unconfirmed (consents,
+  reviews, missing links) — keep it current as items are resolved.
 - Don't commit `initial_docs/`, `initial_instructions.md`, `_site/`, `screenshots/`
   (all in `.gitignore`).
 

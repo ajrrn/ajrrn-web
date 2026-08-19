@@ -83,7 +83,6 @@ Rules for anyone (human or AI) translating:
 | Research affiliates (People page heading) | Chercheuses et chercheurs affiliés | Personas investigadoras afiliadas | الباحثون المنتسبون |
 | Co-applicant / Collaborator (roles on the People page) | Cocandidat·e / Collaborateur·rice | Cosolicitante / Colaborador/a | مقدِّم/ة طلب مشارك/ة / متعاون/ة |
 | Host address | Adresse de l'hôte | Dirección de la institución anfitriona | عنوان الجهة المضيفة |
-| "(placeholder)" | "(provisoire)" | "(provisional)" | "(نص مؤقت)" |
 
 (The table reflects the choices made so far; the translated files themselves
 are authoritative — update this table when you change a term.)
