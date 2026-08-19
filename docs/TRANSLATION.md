@@ -73,12 +73,12 @@ Rules for anyone (human or AI) translating:
 | forced migration | migration forcée | migración forzada | الهجرة القسرية |
 | displaced people | personnes déplacées | personas desplazadas | الأشخاص النازحون |
 | people on the move | personnes en déplacement | personas en movimiento | الأشخاص المتنقلون |
-| research streams (Stream A / B) | axes de recherche (Axe A / B) | líneas de investigación (Línea A / B) | المسارات البحثية (المسار أ / ب) |
+| research areas (no "Stream A/B" labels — funder jargon): Human rights and digital border governance / Rights‑enhancing technologies | domaines de recherche : Droits de la personne et gouvernance numérique des frontières / Technologies favorables aux droits | áreas de investigación: Derechos humanos y gobernanza digital de las fronteras / Tecnologías que fortalecen los derechos | مجالات البحث: حقوق الإنسان والحوكمة الرقمية للحدود / التقنيات المعزِّزة للحقوق |
 | Consultative Committee | Comité consultatif | Comité Consultivo | اللجنة الاستشارية |
 | open access / open source | libre accès / (outils) libres | acceso abierto / código abierto | الوصول المفتوح / مفتوحة المصدر |
 | SSHRC | CRSH (Conseil de recherches en sciences humaines du Canada) | SSHRC (Consejo de Investigación en Ciencias Sociales y Humanidades de Canadá) | SSHRC (مجلس أبحاث العلوم الاجتماعية والإنسانية في كندا) |
-| Menu: About / Projects / Publications / Events / News / Opportunities / Contact | À propos / Projets / Publications / Événements / Actualités / Occasions / Contact | Sobre la red / Proyectos / Publicaciones / Eventos / Noticias / Oportunidades / Contacto | عن الشبكة / المشاريع / المنشورات / الفعاليات / الأخبار / الفرص / اتصل بنا |
-| People / Partners (About sub-menu) | Notre équipe / Partenaires | Personas / Organizaciones aliadas | الفريق / الشركاء |
+| Menu: About / Projects / Publications / News & events / Opportunities / Contact | À propos / Projets / Publications / Actualités et événements / Occasions / Contact | Sobre la red / Proyectos / Publicaciones / Noticias y eventos / Oportunidades / Contacto | عن الشبكة / المشاريع / المنشورات / الأخبار والفعاليات / الفرص / اتصل بنا |
+| People / Partners / Contact (About sub-menu) | Notre équipe / Partenaires / Contact | Personas / Organizaciones aliadas / Contacto | الفريق / الشركاء / اتصل بنا |
 | Research affiliates (People page heading) | Chercheuses et chercheurs affiliés | Personas investigadoras afiliadas | الباحثون المنتسبون |
 | Co-applicant / Collaborator (roles on the People page) | Cocandidat·e / Collaborateur·rice | Cosolicitante / Colaborador/a | مقدِّم/ة طلب مشارك/ة / متعاون/ة |
 | Host address | Adresse de l'hôte | Dirección de la institución anfitriona | عنوان الجهة المضيفة |

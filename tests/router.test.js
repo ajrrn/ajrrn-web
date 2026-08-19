@@ -35,6 +35,16 @@ test("language prefixes on production hosts redirect to the subdomain", () => {
   assert.deepEqual(resolve(u("https://fr.ajrrn.org/es")), { type: "redirect", status: 301, location: "https://es.ajrrn.org/" });
 });
 
+test("moved paths redirect to their new location (events list -> news & events)", () => {
+  assert.deepEqual(resolve(u("https://ajrrn.org/events/")), { type: "redirect", status: 301, location: "https://ajrrn.org/news/" });
+  assert.deepEqual(resolve(u("https://fr.ajrrn.org/events")), { type: "redirect", status: 301, location: "https://fr.ajrrn.org/news/" });
+  assert.deepEqual(resolve(u("https://ajrrn.org/es/events/?a=1")), { type: "redirect", status: 301, location: "https://es.ajrrn.org/news/?a=1" });
+  assert.deepEqual(resolve(u("http://localhost:8787/ar/events/")), { type: "redirect", status: 301, location: "/ar/news/" });
+  assert.deepEqual(resolve(u("http://localhost:8787/events/")), { type: "redirect", status: 301, location: "/en/news/" });
+  // Event pages themselves have not moved.
+  assert.deepEqual(resolve(u("https://ajrrn.org/events/2026-09-22-network-launch/")), { type: "asset", path: "/en/events/2026-09-22-network-launch/", lang: "en" });
+});
+
 test("www redirects to apex", () => {
   assert.deepEqual(resolve(u("https://www.ajrrn.org/news/?x=y")), { type: "redirect", status: 301, location: "https://ajrrn.org/news/?x=y" });
 });

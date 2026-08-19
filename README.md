@@ -55,7 +55,7 @@ wrangler.jsonc          Cloudflare Workers configuration
 
 ## Documentation
 
-- [docs/CONTENT-GUIDE.md](docs/CONTENT-GUIDE.md) — how to add/edit pages, news, events, people…
+- [docs/CONTENT-GUIDE.md](docs/CONTENT-GUIDE.md) — how to add/edit pages, news & events, people…
 - [docs/TRANSLATION.md](docs/TRANSLATION.md) — how the four language versions are kept in sync
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — how the build, the Worker and the languages fit together
 - [docs/CLOUDFLARE-SETUP.md](docs/CLOUDFLARE-SETUP.md) — step-by-step Cloudflare setup (one-off)

@@ -34,12 +34,13 @@ ui:
   language: Langue
   home: Accueil
   read_more: En savoir plus
-  all_news: Toutes les actualités
+  all_news: Toutes les actualités et tous les événements
   all_events: Tous les événements
   upcoming_events: Événements à venir
   past_events: Événements passés
   no_upcoming_events: Aucun événement n'est prévu pour le moment. Revenez bientôt.
   no_items: Rien à afficher pour l'instant — revenez bientôt.
+  news: Actualités
   latest_news: Dernières actualités
   when: Quand
   where: Où
@@ -55,9 +56,9 @@ ui:
   website: Site Web
   team: Équipe
   affiliates: Chercheuses et chercheurs affiliés
-  research_streams: Axes de recherche
-  stream_a: "Axe A — Droits de la personne et gouvernance numérique des frontières"
-  stream_b: "Axe B — Technologies favorables aux droits"
+  research_streams: Axe de recherche
+  stream_a: "Droits de la personne et gouvernance numérique des frontières"
+  stream_b: "Technologies favorables aux droits"
   status: État
   role: Rôle
   affiliation: Affiliation

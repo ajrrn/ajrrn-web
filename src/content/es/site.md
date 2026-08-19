@@ -34,12 +34,13 @@ ui:
   language: Idioma
   home: Inicio
   read_more: Leer más
-  all_news: Todas las noticias
+  all_news: Todas las noticias y eventos
   all_events: Todos los eventos
   upcoming_events: Próximos eventos
   past_events: Eventos pasados
   no_upcoming_events: Por el momento no hay eventos programados. Vuelva a consultar pronto.
   no_items: Todavía no hay contenido aquí. Vuelva a consultar pronto.
+  news: Noticias
   latest_news: Últimas noticias
   when: Cuándo
   where: Dónde
@@ -55,9 +56,9 @@ ui:
   website: Sitio web
   team: Equipo
   affiliates: Personas investigadoras afiliadas
-  research_streams: Líneas de investigación
-  stream_a: "Línea A — Derechos humanos y gobernanza digital de las fronteras"
-  stream_b: "Línea B — Tecnologías que fortalecen los derechos"
+  research_streams: Área de investigación
+  stream_a: "Derechos humanos y gobernanza digital de las fronteras"
+  stream_b: "Tecnologías que fortalecen los derechos"
   status: Estado
   role: Función
   affiliation: Afiliación

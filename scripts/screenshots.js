@@ -7,7 +7,7 @@ import { chromium } from "playwright";
 import { Miniflare, convertV4MiniflareOptions } from "miniflare";
 
 const outDir = process.argv[3] || "screenshots";
-const pages = (process.env.PAGES || "/,/about/,/people/,/projects/,/events/,/news/,/opportunities/,/contact/,/privacy/,/nope/").split(",");
+const pages = (process.env.PAGES || "/,/about/,/people/,/partners/,/projects/,/news/,/opportunities/,/contact/,/privacy/,/nope/").split(",");
 const langs = (process.env.LANGS || "en,fr,es,ar").split(",");
 const viewports = {
   narrow: { width: 320, height: 568, deviceScaleFactor: 2, isMobile: true, hasTouch: true },

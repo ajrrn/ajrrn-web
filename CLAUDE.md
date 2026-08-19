@@ -36,6 +36,14 @@ This is the AJRRN website: Eleventy static site + Cloudflare Worker. Read
 - People and partners have no pages of their own: names link outward via
   `link:`. Don't add internal links to `/people/<slug>/`.
 - Headings inside markdown bodies start at `##` (the page title is the h1).
+- Don't label the two research areas "Stream A" / "Stream B" anywhere a
+  visitor can read (that is funder jargon); use their names — *Human rights
+  and digital border governance* and *Rights‑enhancing technologies*. The
+  `stream: A|B` front-matter key stays as an internal key.
+- Menu: About (About the network · People · Partners · Contact) · Projects
+  (Projects · Publications) · News & events (`/news/`, which also lists
+  events; `/events/` redirects there) · Opportunities. Don't add top-level
+  items without asking.
 - The header/footer logo is `src/assets/img/ajrrn-logo-colour.svg` (vector);
   don't reintroduce the PNG in templates.
 - `docs/LAUNCH-CHECKLIST.md` tracks what is still placeholder — keep it current

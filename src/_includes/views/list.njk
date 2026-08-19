@@ -7,21 +7,36 @@
     {{ content | safe }}
   </div>
 
-  {%- if section == "events" %}
-    {%- set upcomingItems = items | upcoming %}
-    {%- set pastItems = items | past %}
-    <section class="list-section">
+  {%- if section == "news" %}
+    {#- News & events: one page.  Upcoming events first (time-sensitive), then
+        all announcements, then past events. Event rows are rendered with the
+        events layout via `rowSection`; the item pages keep their own URLs. -#}
+    {%- set eventItems = collections.events | byLang(lang) %}
+    {%- set upcomingItems = eventItems | upcoming %}
+    {%- set pastItems = eventItems | past %}
+    <section class="list-section" id="upcoming">
       <h2>{{ s.ui.upcoming_events }}</h2>
       {%- if upcomingItems.length %}
       <ul class="item-list">
+        {%- set rowSection = "events" %}
         {%- for item in upcomingItems %}{% include "partials/row.njk" %}{% endfor %}
       </ul>
       {%- else %}<p class="empty">{{ s.ui.no_upcoming_events }}</p>{% endif %}
     </section>
+    <section class="list-section" id="news">
+      <h2>{{ s.ui.news }}</h2>
+      {%- if items.length %}
+      <ul class="item-list">
+        {%- set rowSection = "news" %}
+        {%- for item in items %}{% include "partials/row.njk" %}{% endfor %}
+      </ul>
+      {%- else %}<p class="empty">{{ s.ui.no_items }}</p>{% endif %}
+    </section>
     {%- if pastItems.length %}
-    <section class="list-section">
+    <section class="list-section" id="past-events">
       <h2>{{ s.ui.past_events }}</h2>
       <ul class="item-list">
+        {%- set rowSection = "events" %}
         {%- for item in pastItems %}{% include "partials/row.njk" %}{% endfor %}
       </ul>
     </section>

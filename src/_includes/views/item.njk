@@ -1,6 +1,8 @@
 {%- set s = strings[lang] -%}
-{%- set listUrl = ("/" + lang + "/" + section + "/") | href(lang) -%}
-{%- set listPage = collections.translations["/" + section + "/"][lang] -%}
+{#- Events are listed on the News & events page (/news/); there is no /events/ list page. -#}
+{%- set listSection = "news" if section == "events" else section -%}
+{%- set listUrl = ("/" + lang + "/" + listSection + "/") | href(lang) -%}
+{%- set listPage = collections.translations["/" + listSection + "/"][lang] -%}
 <div class="container page-layout">
   {% include "partials/sectionnav.njk" %}
   <article class="prose item-page">

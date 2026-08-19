@@ -13,6 +13,8 @@ main:
         url: /people/
       - label: Partners
         url: /partners/
+      - label: Contact
+        url: /contact/
   - label: Projects
     url: /projects/
     children:
@@ -20,14 +22,10 @@ main:
         url: /projects/
       - label: Publications
         url: /publications/
-  - label: Events
-    url: /events/
-  - label: News
+  - label: News & events
     url: /news/
   - label: Opportunities
     url: /opportunities/
-  - label: Contact
-    url: /contact/
 
 footer:
   - label: About
@@ -40,9 +38,7 @@ footer:
     url: /projects/
   - label: Publications
     url: /publications/
-  - label: Events
-    url: /events/
-  - label: News
+  - label: News & events
     url: /news/
   - label: Opportunities
     url: /opportunities/

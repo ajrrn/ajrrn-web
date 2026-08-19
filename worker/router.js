@@ -27,6 +27,11 @@ export const DEFAULT_CONFIG = {
   languages: ["en", "fr", "es", "ar"],
   // Paths that are language-independent and served from the root of the build.
   sharedPrefixes: ["/assets/"],
+  // Old language-relative paths that moved: 301 to the new path on the same
+  // language. Keys and values are exact paths with trailing slash.
+  movedPaths: {
+    "/events/": "/news/", // events list merged into the News & events page (2026-08)
+  },
 };
 
 /** Map hostname -> language code, or null if this is not a production hostname. */
@@ -37,6 +42,13 @@ export function languageForHost(hostname, config = DEFAULT_CONFIG) {
     if (host === `${lang}.${config.domain}`) return lang;
   }
   return null;
+}
+
+/** New path for a language-relative path that has moved, or null. */
+function movedTo(rest, config) {
+  const moved = config.movedPaths || {};
+  const key = rest.endsWith("/") ? rest : `${rest}/`;
+  return Object.prototype.hasOwnProperty.call(moved, key) ? moved[key] : null;
 }
 
 function langPrefix(pathname, config) {
@@ -75,22 +87,30 @@ export function resolve(url, config = DEFAULT_CONFIG) {
   const prefixed = langPrefix(pathname, config);
 
   if (hostLang) {
-    // Production: a language prefix in the path is redundant -> canonicalise.
+    // Production: a language prefix in the path is redundant -> canonicalise
+    // (and apply moved paths in the same hop).
     if (prefixed) {
       const targetHost = prefixed.lang === config.defaultLanguage ? config.domain : `${prefixed.lang}.${config.domain}`;
-      return { type: "redirect", status: 301, location: `https://${targetHost}${prefixed.rest}${search}` };
+      const rest = movedTo(prefixed.rest, config) || prefixed.rest;
+      return { type: "redirect", status: 301, location: `https://${targetHost}${rest}${search}` };
     }
+    const moved = movedTo(pathname, config);
+    if (moved) return { type: "redirect", status: 301, location: `https://${hostname}${moved}${search}` };
     return { type: "asset", path: `/${hostLang}${pathname}`, lang: hostLang };
   }
 
   // Preview / local: language lives in the path.
   if (prefixed) {
+    const moved = movedTo(prefixed.rest, config);
+    if (moved) return { type: "redirect", status: 301, location: `/${prefixed.lang}${moved}${search}` };
     return { type: "asset", path: pathname, lang: prefixed.lang };
   }
   if (pathname === "/" || pathname === "") {
     return { type: "redirect", status: 302, location: `/${config.defaultLanguage}/${search}` };
   }
   // Unprefixed path on a preview host: try the default language.
+  const moved = movedTo(pathname, config);
+  if (moved) return { type: "redirect", status: 301, location: `/${config.defaultLanguage}${moved}${search}` };
   return { type: "asset", path: `/${config.defaultLanguage}${pathname}`, lang: config.defaultLanguage };
 }
 

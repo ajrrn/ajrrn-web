@@ -64,9 +64,15 @@ test("integration: trailing-slash redirect keeps the public URL form", { skip },
 });
 
 test("integration: language prefix on production host redirects to subdomain", { skip }, async () => {
-  const res = await get("https://ajrrn.org/es/events/");
+  const res = await get("https://ajrrn.org/es/projects/");
   assert.equal(res.status, 301);
-  assert.equal(res.headers.get("location"), "https://es.ajrrn.org/events/");
+  assert.equal(res.headers.get("location"), "https://es.ajrrn.org/projects/");
+});
+
+test("integration: old events list redirects to news & events", { skip }, async () => {
+  const res = await get("https://es.ajrrn.org/events/");
+  assert.equal(res.status, 301);
+  assert.equal(res.headers.get("location"), "https://es.ajrrn.org/news/");
 });
 
 test("integration: www redirects to apex", { skip }, async () => {

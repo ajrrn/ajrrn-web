@@ -38,7 +38,7 @@
     {%- endif %}
   </div>
   <div class="home-col">
-    <h2 class="section-title"><a href="{{ ("/" + lang + "/events/") | href(lang) }}">{{ s.ui.upcoming_events }}</a></h2>
+    <h2 class="section-title"><a href="{{ ("/" + lang + "/news/#upcoming") | href(lang) }}">{{ s.ui.upcoming_events }}</a></h2>
     {%- if events.length %}
     <ul class="item-list">
       {%- for item in events %}
@@ -49,7 +49,7 @@
       </li>
       {%- endfor %}
     </ul>
-    <p class="more-link"><a href="{{ ("/" + lang + "/events/") | href(lang) }}">{{ s.ui.all_events }}</a></p>
+    <p class="more-link"><a href="{{ ("/" + lang + "/news/#upcoming") | href(lang) }}">{{ s.ui.all_events }}</a></p>
     {%- else %}
     <p class="empty">{{ s.ui.no_upcoming_events }}</p>
     {%- endif %}
