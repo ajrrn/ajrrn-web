@@ -15,5 +15,3 @@ Builds and evaluates open‑source tools that support refugees, their advocates 
 Publications arising from this work are listed on the [Publications](/publications/) page.
 
 ## Projects
-
-*Projects listed below are placeholders illustrating how the page will look.*

@@ -15,5 +15,3 @@ Crea y evalúa herramientas de código abierto que apoyan a las personas refugia
 Las publicaciones derivadas de este trabajo figuran en la página de [Publicaciones](/publications/).
 
 ## Proyectos
-
-*Los proyectos que aparecen a continuación son provisionales y sirven para ilustrar cómo se verá la página.*

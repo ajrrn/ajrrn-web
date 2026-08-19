@@ -15,5 +15,3 @@ Conçoit et évalue des outils libres qui soutiennent les personnes réfugiées,
 Les publications issues de ces travaux sont recensées sur la page [Publications](/publications/).
 
 ## Projets
-
-*Les projets énumérés ci-dessous sont des exemples provisoires illustrant l'apparence de la page.*
