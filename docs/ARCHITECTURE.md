@@ -31,7 +31,9 @@ GitHub repo ──push──▶ Cloudflare Workers Builds
   files never need to name a layout (they can override with `layout:` or
   `kind:` if ever needed).
 - Collections (`news`, `events`, `publications`, `opportunities`, `projects`,
-  `people`, `partners`) are built from folder names; the `translations`
+  `people`, `partners`) are built from folder names (news and events are
+  listed together on the News & events page, `news/index.md`; there is no
+  `events/index.md`); the `translations`
   collection maps each page to its counterparts in other languages (used by
   the language switcher, `hreflang` links and the sitemap).
 - `src/_data/strings.js` and `navigation.js` read `site.md` / `navigation.md`
@@ -61,6 +63,7 @@ GitHub repo ──push──▶ Cloudflare Workers Builds
 | `fr.ajrrn.org/x` | asset `/fr/x` |
 | `ajrrn.org/fr/x` | 301 → `https://fr.ajrrn.org/x` |
 | `www.ajrrn.org/x` | 301 → `https://ajrrn.org/x` |
+| `ajrrn.org/events/` (moved path) | 301 → `https://ajrrn.org/news/` — see `movedPaths` in `router.js` |
 | `*.workers.dev/` | 302 → `/en/` |
 | `*.workers.dev/fr/x` | asset `/fr/x` |
 | any host `/assets/…` | asset as-is (served without invoking the Worker) |

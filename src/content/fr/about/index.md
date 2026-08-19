@@ -15,10 +15,10 @@ En critiquant les technologies qui portent atteinte aux droits tout en développ
 
 Le réseau est guidé par le principe **« rien sur nous sans nous »**. La recherche sur la technologie et le contrôle des frontières doit être façonnée par les personnes qui en vivent les réalités. Les chercheuses et chercheurs ayant vécu le déplacement et les organisations communautaires participent à l'établissement des priorités, à la sélection des projets et à la direction des recherches — non seulement comme participantes et participants, mais comme partenaires et coauteurs et coautrices.
 
-Notre travail s'organise en deux axes qui se recoupent :
+Notre travail s'organise en deux domaines qui se recoupent :
 
-- **Axe A — Droits de la personne et gouvernance numérique des frontières** mobilise le droit relatif aux droits de la personne pour étudier et contester les technologies de contrôle des frontières.
-- **Axe B — Technologies favorables aux droits** conçoit et évalue des outils libres qui soutiennent les personnes réfugiées, celles qui les défendent et les décideurs et décideuses.
+- **Droits de la personne et gouvernance numérique des frontières** mobilise le droit relatif aux droits de la personne pour étudier et contester les technologies de contrôle des frontières.
+- **Technologies favorables aux droits** conçoit et évalue des outils libres qui soutiennent les personnes réfugiées, celles qui les défendent et les décideurs et décideuses.
 
 [En savoir plus sur notre recherche](/projects/)
 

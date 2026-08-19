@@ -13,6 +13,8 @@ main:
         url: /people/
       - label: Organizaciones aliadas
         url: /partners/
+      - label: Contacto
+        url: /contact/
   - label: Proyectos
     url: /projects/
     children:
@@ -20,14 +22,10 @@ main:
         url: /projects/
       - label: Publicaciones
         url: /publications/
-  - label: Eventos
-    url: /events/
-  - label: Noticias
+  - label: Noticias y eventos
     url: /news/
   - label: Oportunidades
     url: /opportunities/
-  - label: Contacto
-    url: /contact/
 
 footer:
   - label: Sobre la red
@@ -40,9 +38,7 @@ footer:
     url: /projects/
   - label: Publicaciones
     url: /publications/
-  - label: Eventos
-    url: /events/
-  - label: Noticias
+  - label: Noticias y eventos
     url: /news/
   - label: Oportunidades
     url: /opportunities/

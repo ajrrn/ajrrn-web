@@ -13,6 +13,7 @@ check "https://$D/" 200
 check "https://www.$D/" 301 "https://$D/"
 for l in fr es ar; do check "https://$l.$D/" 200; done
 check "https://$D/fr/about/" 301 "https://fr.$D/about/"
+check "https://$D/events/" 301 "https://$D/news/"
 check "https://fr.$D/about" 307 "https://fr.$D/about/"
 check "https://$D/this-page-does-not-exist/" 404
 check "https://$D/assets/css/site.css" 200

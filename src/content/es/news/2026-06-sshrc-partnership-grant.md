@@ -8,6 +8,6 @@ La Universidad de York ha recibido 2,5 millones de dólares canadienses del Cons
 
 Dirigida por el [Refugee Law Lab](https://refugeelab.ca) de Osgoode Hall Law School, la red reúne a universidades, organizaciones jurídicas y de defensa de derechos, grupos dedicados a la tecnología y los derechos digitales, y personas investigadoras con experiencia propia de desplazamiento, en Canadá y en todo el mundo. En los próximos años investigará el impacto de la inteligencia artificial y de otras tecnologías digitales utilizadas en el control fronterizo sobre las personas refugiadas y otras personas en movimiento, y desarrollará alternativas de código abierto que fortalecen los derechos.
 
-La red está dirigida por Sean Rehaag (Osgoode Hall Law School; director del Refugee Law Lab), y Petra Molnar (directora asociada del Refugee Law Lab) encabeza su línea de derechos humanos.
+La red está dirigida por Sean Rehaag (Osgoode Hall Law School; director del Refugee Law Lab), y Petra Molnar (directora asociada del Refugee Law Lab) encabeza su trabajo sobre derechos humanos y gobernanza digital de las fronteras.
 
 Lea el anuncio de la Universidad de York: [York U awarded $2.5M to investigate, mitigate impact of increasing digital surveillance on refugees](https://www.yorku.ca/news/2026/07/21/york-u-awarded-2-5m-to-investigate-mitigate-impact-of-increasing-digital-surveillance-on-refugees/) (La Universidad de York recibe 2,5 millones de dólares para investigar y mitigar el impacto de la creciente vigilancia digital sobre las personas refugiadas).

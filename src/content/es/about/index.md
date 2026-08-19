@@ -15,10 +15,10 @@ Al criticar las tecnologías que vulneran derechos y, a la vez, desarrollar herr
 
 La red se guía por el principio **«nada sobre nosotros sin nosotros»**. La investigación sobre tecnología y control fronterizo debe estar moldeada por quienes viven sus realidades. Las personas investigadoras con experiencia propia de desplazamiento y las organizaciones comunitarias participan en la definición de prioridades, la selección de proyectos y la dirección de la investigación, no solo como participantes, sino como socias y coautoras.
 
-Nuestro trabajo se organiza en dos líneas que se superponen:
+Nuestro trabajo se organiza en dos áreas que se superponen:
 
-- **Línea A — Derechos humanos y gobernanza digital de las fronteras** utiliza el derecho internacional de los derechos humanos para estudiar y cuestionar las tecnologías de control fronterizo.
-- **Línea B — Tecnologías que fortalecen los derechos** crea y evalúa herramientas de código abierto que apoyan a las personas refugiadas, a quienes las defienden y a quienes toman decisiones.
+- **Derechos humanos y gobernanza digital de las fronteras** utiliza el derecho internacional de los derechos humanos para estudiar y cuestionar las tecnologías de control fronterizo.
+- **Tecnologías que fortalecen los derechos** crea y evalúa herramientas de código abierto que apoyan a las personas refugiadas, a quienes las defienden y a quienes toman decisiones.
 
 [Más información sobre nuestra investigación](/projects/)
 

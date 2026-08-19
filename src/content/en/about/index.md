@@ -15,10 +15,10 @@ By simultaneously critiquing rights‑violating technologies and developing righ
 
 The network is guided by the principle **“nothing about us without us.”** Research on technology and border control must be shaped by those who experience its realities. Researchers with lived experience of displacement and community organizations take part in setting priorities, selecting projects and leading research — not only as participants, but as partners and co‑authors.
 
-Our work is organized in two overlapping streams:
+Our work is organized in two overlapping areas:
 
-- **Stream A — Human rights and digital border governance** uses human rights law to study and challenge technologies of border control.
-- **Stream B — Rights‑enhancing technologies** builds and evaluates open‑source tools that support refugees, their advocates and decision‑makers.
+- **Human rights and digital border governance** uses human rights law to study and challenge technologies of border control.
+- **Rights‑enhancing technologies** builds and evaluates open‑source tools that support refugees, their advocates and decision‑makers.
 
 [Learn more about our research](/projects/)
 

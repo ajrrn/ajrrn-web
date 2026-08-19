@@ -34,12 +34,13 @@ ui:
   language: Language
   home: Home
   read_more: Read more
-  all_news: All news
+  all_news: All news and events
   all_events: All events
   upcoming_events: Upcoming events
   past_events: Past events
   no_upcoming_events: There are no upcoming events at the moment. Please check back soon.
   no_items: Nothing here yet — please check back soon.
+  news: News
   latest_news: Latest news
   when: When
   where: Where
@@ -54,10 +55,10 @@ ui:
   location: Location
   website: Website
   team: Team
-  affiliates: Academic affiliates
-  research_streams: Research streams
-  stream_a: "Stream A — Human rights and digital border governance"
-  stream_b: "Stream B — Rights‑enhancing technologies"
+  affiliates: Research affiliates
+  research_streams: Research area
+  stream_a: "Human rights and digital border governance"
+  stream_b: "Rights‑enhancing technologies"
   status: Status
   role: Role
   affiliation: Affiliation

@@ -4,6 +4,5 @@ title: مرصد الهجرة والتكنولوجيا (Migration and Technology 
 location: دولي
 type: منظمة بحثية
 link: https://www.migrationtechmonitor.com/
-order: 2
+order: 8
 ---
-نص مؤقت.

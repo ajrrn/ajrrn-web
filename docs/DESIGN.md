@@ -22,14 +22,17 @@ essential meaning — only as a small decorative accent.
 
 ## Logo
 
-`src/assets/img/ajrrn-logo-colour.svg` is a vector version of the colour logo,
-extracted from the designer's style-card PDF (the logo is vector in the PDF;
-converted with `pdftocairo -svg`, cropped and optimised with svgo). It is
-crisp at any size or zoom. If the designer supplies a native SVG export of the
-logo (text converted to outlines), drop it in under the same file name — it
-will be smaller and cleaner than the extracted one (~400 KB uncompressed,
-~17 KB over the wire). The PNG variants remain for the Open Graph image and
-icons.
+`src/assets/img/ajrrn-logo-colour.svg` is the designer's native SVG export of
+the colour logo (received 2026-08-19; text as outlines, ~46 KB), which
+replaced a version extracted from the style-card PDF. Its `viewBox` was
+cropped from the export's padded artboard to the drawn artwork
+(`12 27 444.75 207.75`) so that the purple square renders at the same size as
+the earlier file at the tuned header heights (7.15rem desktop / 5rem / 4.25rem
+in `site.css`); the artwork itself is untouched, including the mint strokes
+that spill above and below the square. If a new export arrives, crop its
+`viewBox` the same way (measure the drawn bounds, not the artboard) before
+dropping it in under the same file name. The PNG variants remain for the Open
+Graph image and icons.
 
 ## Type
 

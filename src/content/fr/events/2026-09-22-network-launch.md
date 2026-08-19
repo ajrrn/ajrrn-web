@@ -12,6 +12,6 @@ Réservez la date du lancement en ligne du **Réseau de recherche sur la justice
 **Quand :** le mardi 22 septembre 2026, de 8 h à 9 h 30, heure de l'Est (Toronto).
 **Où :** en ligne, sur Zoom.
 
-Le lancement présentera le réseau, ses partenaires et ses deux axes de recherche, et expliquera comment les chercheuses et chercheurs, les organismes communautaires et les personnes ayant vécu le déplacement peuvent y participer.
+Le lancement présentera le réseau, ses partenaires et ses deux domaines de recherche, et expliquera comment les chercheuses et chercheurs, les organismes communautaires et les personnes ayant vécu le déplacement peuvent y participer.
 
 Les modalités d'inscription et le lien Zoom seront publiés ici et envoyés à la liste de diffusion du réseau à l'approche de la date.

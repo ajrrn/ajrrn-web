@@ -1,5 +1,8 @@
-{#- One row in a list.  Expects `item`, `section`, `lang`, `s`. -#}
+{#- One row in a list.  Expects `item`, `section`, `lang`, `s`.
+    A template that mixes collections (the News & events page) can set
+    `rowSection` to override `section` for the rows it includes. -#}
 {%- set d = item.data -%}
+{%- set section = rowSection or section -%}
 <li class="item-row">
   {%- if section == "news" %}
   <time datetime="{{ item.date | isoDate }}" class="item-date">{{ item.date | localeDate(lang) }}</time>

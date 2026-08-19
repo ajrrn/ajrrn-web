@@ -5,6 +5,11 @@ All content lives in `src/content/<language>/`, one folder per language:
 the same structure and the same file names.** The file name is what ties the
 translations of a page together, so never rename a file in one language only.
 
+**Any edit to `en/` is mirrored in `fr/`, `es/` and `ar/` in the same
+change** — new files, deleted files, changed text, changed front matter. When
+the edit is made with Claude Code this is done automatically unless you ask
+for English only; see [TRANSLATION.md](TRANSLATION.md).
+
 ```
 src/content/en/
 ├── site.md              site-wide text: name, contact, footer, interface labels
@@ -14,11 +19,11 @@ src/content/en/
 ├── about/index.md       About the network
 ├── people/index.md      + one file per person
 ├── partners/index.md    + one file per partner organization
-├── projects/index.md    Projects page (research streams) + one file per project
+├── projects/index.md    Projects page (research areas) + one file per project
 ├── publications/index.md + one file per publication
 ├── opportunities/index.md + one file per opportunity
-├── events/index.md      + one file per event
-├── news/index.md        + one file per announcement
+├── news/index.md        News & events page (intro) + one file per announcement
+├── events/              one file per event (listed on the News & events page; no index.md)
 ├── contact/index.md
 └── privacy/index.md
 ```
@@ -43,8 +48,11 @@ own format automatically.
 
 ## Section pages (`<section>/index.md`)
 
-The body of `news/index.md`, `events/index.md`, etc. is the introduction shown
-above the automatically generated list.
+The body of `news/index.md`, `publications/index.md`, etc. is the introduction
+shown above the automatically generated list. `news/index.md` is the **News &
+events** page: it lists upcoming events, then all announcements, then past
+events. Event files live in `events/` but have no list page of their own
+(`/events/` redirects to `/news/`).
 
 ## Items
 
@@ -76,9 +84,9 @@ summary: …
 ---
 ```
 
-Events are split into *upcoming* and *past* automatically (an event stays
-"upcoming" until the end of its `end` date, or its `date` if there is no
-`end`). Upcoming events also appear on the home page.
+Events are split into *upcoming* and *past* automatically on the News &
+events page (an event stays "upcoming" until the end of its `end` date, or its
+`date` if there is no `end`). Upcoming events also appear on the home page.
 
 ### Publications — `publications/YYYY-slug.md`
 
@@ -113,7 +121,9 @@ summary: …
 ```yaml
 ---
 title: …
-stream: A                 # A or B (controls grouping on the Projects page)
+stream: A                 # A = human rights and digital border governance,
+                          # B = rights‑enhancing technologies (internal key; the
+                          # page shows the area's name from site.md, never "Stream A")
 status: Planned           # free text, optional
 summary: …
 order: 1                  # optional; lower numbers first
@@ -129,7 +139,7 @@ title: Jane Doe           # same as name
 role: Project Director
 affiliation: Osgoode Hall Law School, York University
 email: jane@example.org   # optional, shown as a mailto link
-group: staff              # staff | affiliate  (controls which list)
+group: staff              # staff | affiliate  (controls which list: "Team" or "Research affiliates")
 link: https://…           # external profile page; the name links there (optional)
 order: 1                  # optional; lower numbers first
 ---
@@ -158,7 +168,7 @@ website) and do not get pages of their own.
 ## Menus — `navigation.md`
 
 ```yaml
-main:                     # the top menu
+main:                     # the top menu: About · Projects · News & events · Opportunities
   - label: About
     url: /about/
     children:             # optional: shown as a sub-menu on those pages
@@ -166,6 +176,8 @@ main:                     # the top menu
         url: /about/
       - label: People
         url: /people/
+      - label: Contact
+        url: /contact/
 footer:                   # the footer menu
   - label: Privacy policy
     url: /privacy/

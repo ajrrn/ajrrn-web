@@ -1,7 +1,7 @@
 ---
 name: Petra Molnar
 title: Petra Molnar
-role: Stream A lead
+role: Lead, human rights and digital border governance
 affiliation: Refugee Law Lab, York University; Migration and Technology Monitor
 group: staff
 link: https://www.petramolnar.com/about

@@ -13,6 +13,8 @@ main:
         url: /people/
       - label: الشركاء
         url: /partners/
+      - label: اتصل بنا
+        url: /contact/
   - label: المشاريع
     url: /projects/
     children:
@@ -20,14 +22,10 @@ main:
         url: /projects/
       - label: المنشورات
         url: /publications/
-  - label: الفعاليات
-    url: /events/
-  - label: الأخبار
+  - label: الأخبار والفعاليات
     url: /news/
   - label: الفرص
     url: /opportunities/
-  - label: اتصل بنا
-    url: /contact/
 
 footer:
   - label: عن الشبكة
@@ -40,9 +38,7 @@ footer:
     url: /projects/
   - label: المنشورات
     url: /publications/
-  - label: الفعاليات
-    url: /events/
-  - label: الأخبار
+  - label: الأخبار والفعاليات
     url: /news/
   - label: الفرص
     url: /opportunities/

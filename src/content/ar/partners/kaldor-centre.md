@@ -4,6 +4,5 @@ title: مركز كالدور لقانون اللاجئين الدولي (Kaldor 
 location: سيدني، أستراليا
 type: مركز بحثي أكاديمي
 link: https://www.unsw.edu.au/kaldor-centre
-order: 3
+order: 7
 ---
-نص مؤقت.

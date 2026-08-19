@@ -8,8 +8,9 @@ path:
 
 1. **Create a branch** from `main` (for example `news/2026-10-webinar`).
 2. **Edit or add markdown files** under `src/content/` (see
-   [CONTENT-GUIDE.md](CONTENT-GUIDE.md)). Add the same change to all four
-   languages (see [TRANSLATION.md](TRANSLATION.md)).
+   [CONTENT-GUIDE.md](CONTENT-GUIDE.md)). Make the same change in all four
+   languages in the same branch — with Claude Code this is automatic unless
+   you ask for English only (see [TRANSLATION.md](TRANSLATION.md)).
 3. **Push the branch.** Two things happen automatically:
    - GitHub Actions builds the site and runs the checks (see the ✔/✘ next to
      the commit).
