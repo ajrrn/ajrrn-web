@@ -7,4 +7,3 @@ group: staff
 link: https://www.osgoode.yorku.ca/faculty-and-staff/rehaag-sean/
 order: 1
 ---
-Biographie provisoire.
