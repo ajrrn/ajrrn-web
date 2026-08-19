@@ -4,6 +4,7 @@ authors: Petra Molnar
 date: 2026-08-13
 venue: Libro, Palgrave Macmillan (acceso abierto; solo en inglés)
 pubtype: book
+date_precision: year
 link: https://link.springer.com/book/10.1007/978-3-032-32070-4
 summary: "Situado en la intersección de la criminología, los estudios críticos sobre migración y el análisis sociotécnico, este libro sostiene que la IA y otras tecnologías de vigilancia autónomas no se limitan a «gestionar» la migración: producen activamente sospecha racializada, legitiman la expansión del control policial y hacen posibles nuevas formas de control preventivo sobre las personas en movimiento. Solo en inglés."
 ---

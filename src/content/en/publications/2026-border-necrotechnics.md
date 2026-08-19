@@ -4,6 +4,7 @@ authors: Petra Molnar
 date: 2026-08-13
 venue: Book, Palgrave Macmillan (open access)
 pubtype: book
+date_precision: year
 link: https://link.springer.com/book/10.1007/978-3-032-32070-4
 summary: "Positioned at the intersection of criminology, critical migration studies and socio‑technical analysis, this book argues that AI and other autonomous surveillance technologies do not simply “manage” migration: they actively produce racialized suspicion, legitimize expanded policing and enable new forms of pre‑emptive control over people on the move."
 ---

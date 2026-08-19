@@ -14,7 +14,7 @@
   <p class="item-summary">{% if d.location %}{{ d.location }}{% if d.summary %} — {% endif %}{% endif %}{{ d.summary }}</p>
   {%- elif section == "publications" %}
   <a class="item-title" href="{{ item.url | href(lang) }}">{{ d.title }}</a>
-  <p class="item-summary">{% if d.authors %}{{ d.authors }}. {% endif %}{% if d.venue %}{{ d.venue }}, {% endif %}<time datetime="{{ item.date | isoDate }}">{{ item.date | localeDate(lang, "month") }}</time>{% if d.link %} · <a href="{{ d.link }}">{{ s.ui.publication_link }}</a>{% endif %}</p>
+  <p class="item-summary">{% if d.authors %}{{ d.authors }}. {% endif %}{% if d.venue %}{{ d.venue }}, {% endif %}<time datetime="{{ item.date | isoDate }}">{{ item.date | localeDate(lang, d.date_precision or "month") }}</time>{% if d.link %} · <a href="{{ d.link }}">{{ s.ui.publication_link }}</a>{% endif %}</p>
   {%- elif section == "opportunities" %}
   <a class="item-title" href="{{ item.url | href(lang) }}">{{ d.title }}</a>
   <p class="item-summary">{% if d.location %}{{ d.location }}. {% endif %}{% if d.deadline %}{{ s.ui.deadline }}: <time datetime="{{ d.deadline | isoDate }}">{{ d.deadline | localeDate(lang) }}</time>. {% endif %}{{ d.summary }}</p>

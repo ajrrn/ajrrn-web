@@ -194,7 +194,9 @@ export default function (eleventyConfig) {
         ? { year: "numeric", month: "short", day: "numeric", timeZone: "UTC" }
         : style === "month"
           ? { year: "numeric", month: "long", timeZone: "UTC" }
-          : { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" };
+          : style === "year"
+            ? { year: "numeric", timeZone: "UTC" }
+            : { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" };
     return new Intl.DateTimeFormat(locale, opts).format(d);
   });
   eleventyConfig.addFilter("isoDate", (value) => {
