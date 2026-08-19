@@ -1,9 +1,9 @@
 ---
 title: Politique de confidentialité
 description: Comment ce site Web traite l'information concernant ses visiteuses et visiteurs.
-updated: 2026-08-18
+updated: 2026-08-19
 ---
-*Ébauche — cette politique s'applique au site Web ajrrn.org et à ses versions linguistiques (fr.ajrrn.org, es.ajrrn.org, ar.ajrrn.org). Elle ne couvre pas les activités de recherche du réseau, qui sont régies par des protocoles d'éthique de la recherche et des plans de gestion des données distincts.*
+*Cette politique s'applique au site Web ajrrn.org et à ses versions linguistiques (fr.ajrrn.org, es.ajrrn.org, ar.ajrrn.org). Elle ne couvre pas les activités de recherche du réseau, qui sont régies par des protocoles d'éthique de la recherche et des plans de gestion des données distincts.*
 
 ## En résumé
 

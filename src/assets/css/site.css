@@ -145,6 +145,9 @@ html[lang="ar"] { line-height: 1.75; }
 .prose table { border-collapse: collapse; width: 100%; font-size: 0.95em; display: block; overflow-x: auto; }
 .prose th, .prose td { border: 1px solid var(--rule); padding: 0.4em 0.6em; text-align: start; }
 .prose img { display: block; margin: 1.5em 0; }
+/* Funder signature (SSHRC): generous open space, nothing crowding it, no visually conflicting background. */
+.funder-logo { margin: 2.5rem 0; }
+.funder-logo img { display: block; width: 100%; max-width: 40rem; margin: 0; }
 .prose em { color: inherit; }
 .prose code { font-size: 0.9em; background: var(--bg-soft); padding: 0.1em 0.3em; border-radius: var(--radius); }
 

@@ -13,6 +13,8 @@ main:
         url: /people/
       - label: الشركاء
         url: /partners/
+      - label: الجهات المموِّلة
+        url: /funders/
       - label: اتصل بنا
         url: /contact/
   - label: المشاريع
@@ -42,6 +44,8 @@ footer:
     url: /news/
   - label: الفرص
     url: /opportunities/
+  - label: الجهات المموِّلة
+    url: /funders/
   - label: اتصل بنا
     url: /contact/
   - label: سياسة الخصوصية

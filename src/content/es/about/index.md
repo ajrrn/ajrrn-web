@@ -28,6 +28,7 @@ La AJRRN tiene su sede en el [Refugee Law Lab](https://refugeelab.ca) (Laborator
 
 - [Personas](/people/)
 - [Organizaciones aliadas](/partners/)
+- [Financiadores](/funders/)
 
 ## Nuestros compromisos
 

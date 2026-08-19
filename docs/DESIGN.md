@@ -31,8 +31,14 @@ the earlier file at the tuned header heights (7.15rem desktop / 5rem / 4.25rem
 in `site.css`); the artwork itself is untouched, including the mint strokes
 that spill above and below the square. If a new export arrives, crop its
 `viewBox` the same way (measure the drawn bounds, not the artboard) before
-dropping it in under the same file name. The PNG variants remain for the Open
-Graph image and icons.
+dropping it in under the same file name. The favicon/app icons are the designer's square mark: `favicon.svg` is that
+mark cropped out of the logo SVG (viewBox `-11.75 11.2 232 232`, wordmark
+removed); the PNG icons were resized from the designer's favicon PNG.
+`og-image.png` still derives from the earlier extracted artwork.
+
+The SSHRC signature on the Funders page (`sshrc-signature-en.png`/`-fr.png`)
+comes from SSHRC's official package and must not be altered; it sits alone
+with generous space (`.funder-logo`), on white, as their guidelines require.
 
 ## Type
 

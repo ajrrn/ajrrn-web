@@ -1,9 +1,9 @@
 ---
 title: Privacy policy
 description: How this website handles information about its visitors.
-updated: 2026-08-18
+updated: 2026-08-19
 ---
-*Draft — this policy applies to the website ajrrn.org and its language versions (fr.ajrrn.org, es.ajrrn.org, ar.ajrrn.org). It does not cover the network's research activities, which are governed by separate research ethics protocols and data management plans.*
+*This policy applies to the website ajrrn.org and its language versions (fr.ajrrn.org, es.ajrrn.org, ar.ajrrn.org). It does not cover the network's research activities, which are governed by separate research ethics protocols and data management plans.*
 
 ## Summary
 

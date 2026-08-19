@@ -28,6 +28,7 @@ L'AJRRN est hébergé par le [Refugee Law Lab](https://refugeelab.ca) de l'Osgoo
 
 - [Notre équipe](/people/)
 - [Organisations partenaires](/partners/)
+- [Bailleurs de fonds](/funders/)
 
 ## Nos engagements
 

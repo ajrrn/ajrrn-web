@@ -13,6 +13,8 @@ main:
         url: /people/
       - label: Partners
         url: /partners/
+      - label: Funders
+        url: /funders/
       - label: Contact
         url: /contact/
   - label: Projects
@@ -42,6 +44,8 @@ footer:
     url: /news/
   - label: Opportunities
     url: /opportunities/
+  - label: Funders
+    url: /funders/
   - label: Contact
     url: /contact/
   - label: Privacy policy
