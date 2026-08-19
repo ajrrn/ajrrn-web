@@ -53,7 +53,7 @@ with generous space (`.funder-logo`), on white, as their guidelines require.
 
 - One container (max 75rem). Header: SVG logo (7.15rem tall on desktop,
   5rem on phones, 4.25rem under 30em) + menu + language switcher, all on one
-  line down to ~832px in every language. Footer: logo · site links in rows of four (About · People · Partners · Funders / Projects · Publications · News & events · Opportunities / Contact · Privacy policy)
+  line down to ~832px in every language. Footer: logo · site links in three columns (About · People · Partners · Funders | Projects · Publications · News & events · Opportunities | Contact · Privacy policy)
   (email + host address), then a full-width land-acknowledgement band, then
   the copyright line. The language switcher lives only in the header.
 - Content pages: optional section sub-menu (About · People · Partners; Projects · Publications), an
