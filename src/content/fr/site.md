@@ -27,6 +27,7 @@ footer:
   copyright: Réseau de recherche sur la justice algorithmique pour les personnes réfugiées (AJRRN)
 
 ui:
+  host: Hôte
   footer_links: Liens du site
   skip_to_content: Aller au contenu principal
   menu: Menu

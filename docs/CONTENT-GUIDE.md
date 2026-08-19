@@ -19,6 +19,7 @@ src/content/en/
 ├── about/index.md       About the network
 ├── people/index.md      + one file per person
 ├── partners/index.md    + one file per partner organization
+├── funders/index.md     Funders (SSHRC acknowledgement — wording fixed by the funder)
 ├── projects/index.md    Projects page (research areas) + one file per project
 ├── publications/index.md + one file per publication
 ├── opportunities/index.md + one file per opportunity
@@ -176,6 +177,8 @@ main:                     # the top menu: About · Projects · News & events · 
         url: /about/
       - label: People
         url: /people/
+      - label: Funders
+        url: /funders/
       - label: Contact
         url: /contact/
 footer:                   # the footer menu
@@ -195,7 +198,7 @@ Everything a visitor reads that is not part of a page:
 |---|---|
 | `name`, `full_name`, `tagline`, `description` | browser tab titles, link previews, defaults |
 | `translation_notice` | banner at the top of every page of that language (empty in English) |
-| `contact.email`, `contact.address_label`, `contact.organization`, `contact.address_lines` | footer contact column and the Contact page |
+| `contact.email`, `contact.address_label`, `contact.organization`, `contact.address_lines` | footer contact column (first line is "Host: `contact.organization`", via `ui.host`) and the Contact page |
 | `footer.land` | land acknowledgement band above the copyright |
 | `footer.copyright` | copyright line |
 | `ui.*` | interface labels — "Read more", "Upcoming events", "Menu", "Site links", … |

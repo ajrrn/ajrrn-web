@@ -28,6 +28,7 @@ The AJRRN is hosted by the [Refugee Law Lab](https://refugeelab.ca) at Osgoode H
 
 - [People](/people/)
 - [Partner organizations](/partners/)
+- [Funders](/funders/)
 
 ## Our commitments
 

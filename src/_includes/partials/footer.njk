@@ -16,7 +16,7 @@
     <div class="footer-contact">
       <h2 class="visually-hidden">{{ s.ui.contact_us }}</h2>
       <p><a href="mailto:{{ s.contact.email }}">{{ s.contact.email }}</a></p>
-      <p>{% if s.contact.address_label %}<span class="footer-label">{{ s.contact.address_label }}</span><br>{% endif %}<strong>{{ s.contact.organization }}</strong><br>
+      <p>{{ s.ui.host }}: {{ s.contact.organization }}<br>
       {%- for line in s.contact.address_lines %}<bdi>{{ line }}</bdi><br>{% endfor %}</p>
     </div>
   </div>

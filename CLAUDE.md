@@ -40,7 +40,7 @@ This is the AJRRN website: Eleventy static site + Cloudflare Worker. Read
   visitor can read (that is funder jargon); use their names — *Human rights
   and digital border governance* and *Rights‑enhancing technologies*. The
   `stream: A|B` front-matter key stays as an internal key.
-- Menu: About (About the network · People · Partners · Contact) · Projects
+- Menu: About (About the network · People · Partners · Funders · Contact) · Projects
   (Projects · Publications) · News & events (`/news/`, which also lists
   events; `/events/` redirects there) · Opportunities. Don't add top-level
   items without asking.

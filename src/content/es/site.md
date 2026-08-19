@@ -27,6 +27,7 @@ footer:
   copyright: Red de Investigación sobre Justicia Algorítmica para Personas Refugiadas
 
 ui:
+  host: Sede
   footer_links: Enlaces del sitio
   skip_to_content: Ir al contenido principal
   menu: Menú

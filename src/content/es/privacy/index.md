@@ -1,9 +1,9 @@
 ---
 title: Política de privacidad
 description: Cómo trata este sitio web la información sobre sus visitantes.
-updated: 2026-08-18
+updated: 2026-08-19
 ---
-*Borrador: esta política se aplica al sitio web ajrrn.org y a sus versiones en otros idiomas (fr.ajrrn.org, es.ajrrn.org, ar.ajrrn.org). No cubre las actividades de investigación de la red, que se rigen por protocolos de ética de la investigación y planes de gestión de datos independientes.*
+*Esta política se aplica al sitio web ajrrn.org y a sus versiones en otros idiomas (fr.ajrrn.org, es.ajrrn.org, ar.ajrrn.org). No cubre las actividades de investigación de la red, que se rigen por protocolos de ética de la investigación y planes de gestión de datos independientes.*
 
 ## Resumen
 
