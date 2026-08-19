@@ -36,6 +36,8 @@ footer:
     url: /people/
   - label: Partenaires
     url: /partners/
+  - label: Bailleurs de fonds
+    url: /funders/
   - label: Projets
     url: /projects/
   - label: Publications
@@ -44,8 +46,6 @@ footer:
     url: /news/
   - label: Occasions
     url: /opportunities/
-  - label: Bailleurs de fonds
-    url: /funders/
   - label: Contact
     url: /contact/
   - label: Politique de confidentialité

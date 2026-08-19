@@ -36,6 +36,8 @@ footer:
     url: /people/
   - label: Organizaciones aliadas
     url: /partners/
+  - label: Financiadores
+    url: /funders/
   - label: Proyectos
     url: /projects/
   - label: Publicaciones
@@ -44,8 +46,6 @@ footer:
     url: /news/
   - label: Oportunidades
     url: /opportunities/
-  - label: Financiadores
-    url: /funders/
   - label: Contacto
     url: /contact/
   - label: Política de privacidad

@@ -47,13 +47,13 @@ with generous space (`.funder-logo`), on white, as their guidelines require.
   glyphs, so Arabic pages use the system sans-serif in bold for headings.
 - **Body:** the visitor's system sans-serif stack — good rendering for Latin
   and Arabic scripts, zero font downloads, no third-party font service.
-- Measure ~44rem for prose; base size 17px desktop / 16px small screens.
+- Measure 48rem for prose (text and list columns); base size 17px desktop / 16px small screens. The header, footer and home-page grid use the full 75rem container.
 
 ## Layout
 
 - One container (max 75rem). Header: SVG logo (7.15rem tall on desktop,
   5rem on phones, 4.25rem under 30em) + menu + language switcher, all on one
-  line down to ~832px in every language. Footer: logo · site links (three columns)
+  line down to ~832px in every language. Footer: logo · site links in rows of four (About · People · Partners · Funders / Projects · Publications · News & events · Opportunities / Contact · Privacy policy)
   (email + host address), then a full-width land-acknowledgement band, then
   the copyright line. The language switcher lives only in the header.
 - Content pages: optional section sub-menu (About · People · Partners; Projects · Publications), an
