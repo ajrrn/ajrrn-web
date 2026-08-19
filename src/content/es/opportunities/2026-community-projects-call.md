@@ -1,12 +1,10 @@
 ---
-title: Convocatoria de proyectos de investigación propuestos por la comunidad (provisional)
-date: 2026-09-01
-deadline: 2027-01-31
+title: Convocatoria de proyectos de investigación propuestos por la comunidad
+date: 2026-08-19
 category: participate
 location: Cualquier lugar
-link: ""
-summary: Se invita a las organizaciones comunitarias y a las personas investigadoras con experiencia propia de desplazamiento a proponer proyectos.
+summary: Prevemos convocatorias anuales que inviten a las organizaciones comunitarias y a las personas investigadoras con experiencia propia de desplazamiento a proponer proyectos de investigación. Detalles próximamente; fecha límite por anunciar.
 ---
-Cada año, la red invita a las organizaciones comunitarias aliadas y a las personas investigadoras con experiencia propia de desplazamiento a proponer proyectos de investigación. Las propuestas son evaluadas por el Comité Consultivo de la red.
+Prevemos convocatorias anuales de proyectos de investigación propuestos por la comunidad: cada año, la red invitará a las organizaciones comunitarias aliadas y a las personas investigadoras con experiencia propia de desplazamiento a proponer proyectos de investigación, que serán evaluados por el Comité Consultivo de la red.
 
-*Esta es una oportunidad provisional (marcador de posición).*
+Los detalles de la primera convocatoria estarán disponibles próximamente. **Fecha límite: por anunciar.**
