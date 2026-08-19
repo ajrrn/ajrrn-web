@@ -198,7 +198,7 @@ Everything a visitor reads that is not part of a page:
 |---|---|
 | `name`, `full_name`, `tagline`, `description` | browser tab titles, link previews, defaults |
 | `translation_notice` | banner at the top of every page of that language (empty in English) |
-| `contact.email`, `contact.address_label`, `contact.organization`, `contact.address_lines` | footer contact column (first line is "Host: `contact.organization`", via `ui.host`) and the Contact page |
+| `contact.email`, `contact.address_label`, `contact.organization`, `contact.address_lines` | the Contact page (the footer has no contact block — logo and site links only) |
 | `footer.land` | land acknowledgement band above the copyright |
 | `footer.copyright` | copyright line |
 | `ui.*` | interface labels — "Read more", "Upcoming events", "Menu", "Site links", … |
