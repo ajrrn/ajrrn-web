@@ -28,6 +28,7 @@
       {%- elif section == "projects" %}
       {%- if stream %}<dt>{{ s.ui.research_streams }}</dt><dd>{{ s.ui["stream_" + (stream | lower)] or stream }}</dd>{% endif %}
       {%- if status %}<dt>{{ s.ui.status }}</dt><dd>{{ status }}</dd>{% endif %}
+      {%- if link %}<dt>{{ link_label or s.ui.website }}</dt><dd><a href="{{ link }}">{{ link | displayUrl }}</a></dd>{% endif %}
       {%- elif section == "people" %}
       {%- if role %}<dt>{{ s.ui.role }}</dt><dd>{{ role }}</dd>{% endif %}
       {%- if affiliation %}<dt>{{ s.ui.affiliation }}</dt><dd>{{ affiliation }}</dd>{% endif %}
