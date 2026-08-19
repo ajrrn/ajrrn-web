@@ -1,12 +1,10 @@
 ---
-title: Call for community‑proposed research projects (placeholder)
-date: 2026-09-01
-deadline: 2027-01-31
+title: Call for community‑proposed research projects
+date: 2026-08-19
 category: participate
 location: Anywhere
-link: ""
-summary: Community organizations and researchers with lived experience of displacement are invited to propose projects.
+summary: We anticipate annual calls inviting community organizations and researchers with lived experience of displacement to propose research projects. Details soon; deadline to be announced.
 ---
-Each year the network invites community partners and researchers with lived experience of displacement to propose research projects. Proposals are reviewed by the network's Consultative Committee.
+We anticipate annual calls for community‑proposed research projects: each year the network will invite community partners and researchers with lived experience of displacement to propose research projects, which are reviewed by the network’s Consultative Committee.
 
-*This is a placeholder opportunity.*
+Details of the first call will be available soon. **Deadline: to be announced.**
