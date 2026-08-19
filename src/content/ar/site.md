@@ -27,7 +27,6 @@ footer:
   copyright: شبكة أبحاث العدالة الخوارزمية للاجئين
 
 ui:
-  host: الجهة المضيفة
   footer_links: روابط الموقع
   skip_to_content: الانتقال إلى المحتوى الرئيسي
   menu: القائمة
