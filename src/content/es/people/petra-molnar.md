@@ -7,4 +7,3 @@ group: staff
 link: https://www.petramolnar.com/about
 order: 2
 ---
-Biografía provisional.
