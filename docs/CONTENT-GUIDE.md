@@ -117,6 +117,7 @@ deadline: 2026-12-01      # optional
 category: study           # work | study | participate  (controls grouping)
 location: York University, Toronto
 link: https://…           # optional
+link_label: Apply online  # optional label for the link on the item page (default "Learn more")
 summary: …
 ---
 ```

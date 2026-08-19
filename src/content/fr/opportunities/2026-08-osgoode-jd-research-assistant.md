@@ -5,6 +5,7 @@ deadline: 2026-08-14
 category: work
 location: Refugee Law Lab, Université York, Toronto
 link: https://crs1.apps01.yorku.ca/machform/view.php?id=43569
+link_label: Postuler en ligne
 summary: Un poste à temps partiel pour une étudiante ou un étudiant au JD de l’Osgoode Hall Law School, afin d’appuyer la recherche et la coordination liées au lancement du réseau. 24,50 $/h, environ 5 à 7 heures par semaine, trimestres d’automne 2026 et d’hiver 2027.
 ---
 Le Refugee Law Lab recherche une étudiante ou un étudiant au JD de l’Osgoode Hall Law School pour appuyer la recherche et la coordination liées au lancement d’un nouveau réseau mondial de recherche sur le droit, la technologie et la migration forcée.
