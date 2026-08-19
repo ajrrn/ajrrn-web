@@ -1,7 +1,7 @@
 ---
 title: "Part-time Osgoode JD research assistant — Refugee Law Lab (AJRRN)"
 date: 2026-08-19
-deadline: 2026-08-14
+deadline: 2026-09-13
 category: work
 location: Refugee Law Lab, York University, Toronto
 link: https://crs1.apps01.yorku.ca/machform/view.php?id=43569
@@ -55,8 +55,8 @@ To assist with the launch of the AJRRN, the successful candidate will:
 
 ## How to apply
 
-- **Application deadline:** August 14, 2026, 11:59 PM
-- **Position start date:** August 31, 2026
+- **Application deadline:** September 13, 2026, 11:59 PM
+- **Position start date:** October 1, 2026
 - **Application method:** [Apply online](https://crs1.apps01.yorku.ca/machform/view.php?id=43569)
 - **Supervising faculty:** Professor Sean Rehaag, RLL Director
 
