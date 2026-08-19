@@ -70,8 +70,8 @@ Workers Builds; `main` deploys to production, other branches get preview URLs
 (`scripts/smoke-production.sh` checks the live site). The repository is
 public and `main` is protected: all changes go through pull requests with
 passing checks (see [docs/WORKFLOW.md](docs/WORKFLOW.md)). Real content so far: home, About, People (3
-staff + 13 research affiliates), Partners (12), Projects page text, Contact, Privacy policy (draft), one
-news item (SSHRC grant), one event (launch, 22 Sept 2026). Publications,
+staff + 13 research affiliates), Partners (12), Projects page text, Contact, Privacy policy, Funders, one
+news item (SSHRC grant), one event (launch, 22 Sept 2026). Two real publications (Bill C‑2 consultation report, *Border Necrotechnics*);
 opportunities and project *entries* are still sample placeholders — see
 `docs/LAUNCH-CHECKLIST.md`.
 

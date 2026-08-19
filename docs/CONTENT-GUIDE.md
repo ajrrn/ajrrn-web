@@ -98,10 +98,14 @@ authors: A. Author, B. Author
 date: 2026-07-01
 venue: Journal name / Report / Policy brief
 pubtype: article          # free text tag, optional
+date_precision: year      # optional: show only the year (books); default shows month + year
 link: https://…           # open-access copy, optional
 summary: …
 ---
 ```
+
+Publications are listed newest first by `date`; the date is always a full
+`YYYY-MM-DD` for sorting even when only the year is shown.
 
 ### Opportunities — `opportunities/YYYY-MM-slug.md`
 

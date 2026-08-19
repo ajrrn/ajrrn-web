@@ -18,7 +18,7 @@
       {%- if link %}<dt>{{ s.ui.event_link }}</dt><dd><a href="{{ link }}">{{ link | displayUrl }}</a></dd>{% endif %}
       {%- elif section == "publications" %}
       {%- if authors %}<dt>{{ s.ui.authors }}</dt><dd>{{ authors }}</dd>{% endif %}
-      {%- if venue %}<dt>{{ s.ui.published }}</dt><dd>{{ venue }}, <time datetime="{{ date | isoDate }}">{{ date | localeDate(lang, "month") }}</time></dd>{% endif %}
+      {%- if venue %}<dt>{{ s.ui.published }}</dt><dd>{{ venue }}, <time datetime="{{ date | isoDate }}">{{ date | localeDate(lang, date_precision or "month") }}</time></dd>{% endif %}
       {%- if link %}<dt>{{ s.ui.publication_link }}</dt><dd><a href="{{ link }}">{{ link | displayUrl }}</a></dd>{% endif %}
       {%- elif section == "opportunities" %}
       {%- if category %}<dt>{{ s.ui.category }}</dt><dd>{{ s.ui["opportunity_" + category] or category }}</dd>{% endif %}
