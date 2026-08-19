@@ -1,12 +1,10 @@
 ---
-title: Appel à projets de recherche proposés par la communauté (provisoire)
-date: 2026-09-01
-deadline: 2027-01-31
+title: Appel à projets de recherche proposés par la communauté
+date: 2026-08-19
 category: participate
 location: Partout
-link: ""
-summary: Les organisations communautaires et les chercheuses et chercheurs ayant vécu le déplacement sont invités à proposer des projets.
+summary: Nous prévoyons des appels annuels invitant les organisations communautaires et les chercheuses et chercheurs ayant vécu le déplacement à proposer des projets de recherche. Détails à venir; date limite à confirmer.
 ---
-Chaque année, le réseau invite ses partenaires communautaires et les chercheuses et chercheurs ayant vécu le déplacement à proposer des projets de recherche. Les propositions sont évaluées par le Comité consultatif du réseau.
+Nous prévoyons des appels annuels à projets de recherche proposés par la communauté : chaque année, le réseau invitera ses partenaires communautaires et les chercheuses et chercheurs ayant vécu le déplacement à proposer des projets de recherche, qui seront évalués par le Comité consultatif du réseau.
 
-*Ceci est un exemple provisoire d'occasion.*
+Les détails du premier appel seront publiés prochainement. **Date limite : à confirmer.**
