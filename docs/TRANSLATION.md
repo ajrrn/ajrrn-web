@@ -80,7 +80,7 @@ Rules for anyone (human or AI) translating:
 | Menu: About / Projects / Publications / Events / News / Opportunities / Contact | À propos / Projets / Publications / Événements / Actualités / Occasions / Contact | Sobre la red / Proyectos / Publicaciones / Eventos / Noticias / Oportunidades / Contacto | عن الشبكة / المشاريع / المنشورات / الفعاليات / الأخبار / الفرص / اتصل بنا |
 | People / Partners (About sub-menu) | Notre équipe / Partenaires | Personas / Organizaciones aliadas | الفريق / الشركاء |
 | Research affiliates (People page heading) | Chercheuses et chercheurs affiliés | Personas investigadoras afiliadas | الباحثون المنتسبون |
-| Co-applicant (role on the People page) | Cocandidat·e | Cosolicitante | مقدِّم/ة طلب مشارك/ة |
+| Co-applicant / Collaborator (roles on the People page) | Cocandidat·e / Collaborateur·rice | Cosolicitante / Colaborador/a | مقدِّم/ة طلب مشارك/ة / متعاون/ة |
 | Host address | Adresse de l'hôte | Dirección de la institución anfitriona | عنوان الجهة المضيفة |
 | "(placeholder)" | "(provisoire)" | "(provisional)" | "(نص مؤقت)" |
 
