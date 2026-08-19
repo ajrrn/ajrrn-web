@@ -2,7 +2,7 @@
 title: Projets
 description: Les domaines de recherche et les projets du Réseau de recherche sur la justice algorithmique pour les personnes réfugiées.
 ---
-Notre recherche s'organise en deux domaines qui se recoupent. Les projets sont choisis dans le cadre d'appels annuels à projets proposés par la communauté, évalués par un Comité consultatif composé de partenaires communautaires et de chercheuses et chercheurs ayant vécu le déplacement.
+Notre recherche s'organise en deux domaines qui se recoupent. Nous prévoyons que bon nombre des futurs projets du réseau seront choisis dans le cadre d'appels annuels à projets proposés par la communauté, évalués par un Comité consultatif composé de partenaires communautaires et de chercheuses et chercheurs ayant vécu le déplacement.
 
 ## Droits de la personne et gouvernance numérique des frontières
 
