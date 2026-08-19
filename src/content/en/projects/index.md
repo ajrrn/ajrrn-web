@@ -2,7 +2,7 @@
 title: Projects
 description: The research areas and projects of the Algorithmic Justice for Refugees Research Network.
 ---
-Our research is organized in two overlapping areas. Specific projects are chosen through annual calls for community‑proposed projects, reviewed by a Consultative Committee made up of community partners and researchers with lived experience of displacement.
+Our research is organized in two overlapping areas. We expect that many of the network’s future projects will be chosen through annual calls for community‑proposed projects, reviewed by a Consultative Committee made up of community partners and researchers with lived experience of displacement.
 
 ## Human rights and digital border governance
 
@@ -15,5 +15,3 @@ Builds and evaluates open‑source tools that support refugees, their advocates 
 Publications arising from this work are listed on the [Publications](/publications/) page.
 
 ## Projects
-
-*Projects listed below are placeholders illustrating how the page will look.*

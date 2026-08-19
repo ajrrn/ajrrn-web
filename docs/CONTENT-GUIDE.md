@@ -131,6 +131,8 @@ stream: A                 # A = human rights and digital border governance,
                           # B = rights‑enhancing technologies (internal key; the
                           # page shows the area's name from site.md, never "Stream A")
 status: Planned           # free text, optional
+link: https://…           # optional: the project's own site / repository (shown on the project page)
+link_label: Website       # optional label for that link (default "Website")
 summary: …
 order: 1                  # optional; lower numbers first
 ---

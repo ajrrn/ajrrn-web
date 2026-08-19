@@ -2,7 +2,7 @@
 title: Proyectos
 description: Las áreas de investigación y los proyectos de la Red de Investigación sobre Justicia Algorítmica para Personas Refugiadas.
 ---
-Nuestra investigación se organiza en dos áreas que se superponen. Los proyectos concretos se eligen mediante convocatorias anuales de proyectos propuestos por la comunidad, evaluadas por un Comité Consultivo integrado por organizaciones comunitarias aliadas y personas investigadoras con experiencia propia de desplazamiento.
+Nuestra investigación se organiza en dos áreas que se superponen. Prevemos que muchos de los futuros proyectos de la red se elegirán mediante convocatorias anuales de proyectos propuestos por la comunidad, evaluadas por un Comité Consultivo integrado por organizaciones comunitarias aliadas y personas investigadoras con experiencia propia de desplazamiento.
 
 ## Derechos humanos y gobernanza digital de las fronteras
 
@@ -15,5 +15,3 @@ Crea y evalúa herramientas de código abierto que apoyan a las personas refugia
 Las publicaciones derivadas de este trabajo figuran en la página de [Publicaciones](/publications/).
 
 ## Proyectos
-
-*Los proyectos que aparecen a continuación son provisionales y sirven para ilustrar cómo se verá la página.*
