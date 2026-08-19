@@ -13,7 +13,10 @@ path:
    you ask for English only (see [TRANSLATION.md](TRANSLATION.md)).
 3. **Push the branch.** Two things happen automatically:
    - GitHub Actions builds the site and runs the checks (see the ✔/✘ next to
-     the commit).
+     the commit). The `check` workflow runs once per pull-request commit and
+     once per push to `main` (normally ~2 minutes; it times out after 15).
+     If it ever sits at "Install Chromium" the runner is stalled — cancel and
+     re-run it from the Actions tab; the code is not at fault.
    - Cloudflare Workers Builds builds the branch and publishes a **preview
      URL** (shown in the Cloudflare dashboard and in the commit status). On
      preview URLs the languages live in the path:
