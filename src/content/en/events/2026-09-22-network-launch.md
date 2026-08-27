@@ -5,7 +5,7 @@ time: "8:00–9:30 a.m. ET (Toronto, UTC−4)"
 location: Online (Zoom)
 online: true
 link: ""
-summary: Please hold the date for the online launch of the Algorithmic Justice for Refugees Research Network. Registration details will follow.
+summary: Please hold the date for the online launch of the Algorithmic Justice for Refugees Research Network. Registration details coming soon.
 ---
 Please save the date for the online launch of the **Algorithmic Justice for Refugees Research Network**.
 
