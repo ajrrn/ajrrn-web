@@ -5,7 +5,7 @@ time: "8 h à 9 h 30, heure de l'Est (Toronto, UTC−4)"
 location: En ligne (Zoom)
 online: true
 link: ""
-summary: Réservez la date du lancement en ligne du Réseau de recherche sur la justice algorithmique pour les personnes réfugiées. Les modalités d'inscription suivront.
+summary: Réservez la date du lancement en ligne du Réseau de recherche sur la justice algorithmique pour les personnes réfugiées. Les modalités d'inscription seront bientôt disponibles.
 ---
 Réservez la date du lancement en ligne du **Réseau de recherche sur la justice algorithmique pour les personnes réfugiées**.
 

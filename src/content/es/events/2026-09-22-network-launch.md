@@ -5,7 +5,7 @@ time: "8:00–9:30 a. m., hora del Este (Toronto, UTC−4)"
 location: En línea (Zoom)
 online: true
 link: ""
-summary: Le invitamos a reservar la fecha del lanzamiento en línea de la Red de Investigación sobre Justicia Algorítmica para Personas Refugiadas. Próximamente compartiremos los detalles de inscripción.
+summary: Le invitamos a reservar la fecha del lanzamiento en línea de la Red de Investigación sobre Justicia Algorítmica para Personas Refugiadas. Los detalles de inscripción estarán disponibles muy pronto.
 ---
 Le invitamos a reservar la fecha del lanzamiento en línea de la **Red de Investigación sobre Justicia Algorítmica para Personas Refugiadas**.
 
