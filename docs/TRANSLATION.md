@@ -83,6 +83,8 @@ Rules for anyone (human or AI) translating:
 | Research affiliates (People page heading) | Chercheuses et chercheurs affiliés | Personas investigadoras afiliadas | الباحثون المنتسبون |
 | Co-applicant / Collaborator (roles on the People page) | Cocandidat·e / Collaborateur·rice | Cosolicitante / Colaborador/a | مقدِّم/ة طلب مشارك/ة / متعاون/ة |
 | Host address | Adresse de l'hôte | Dirección de la institución anfitriona | عنوان الجهة المضيفة |
+| Town hall (open meeting) | Assemblée publique | Asamblea abierta | لقاء مفتوح |
+| Zoom information / Zoom link / Meeting ID / Passcode / One tap mobile / Join by SIP | Renseignements Zoom / Lien Zoom / Numéro de réunion / Code d'accès / Composition rapide depuis un mobile / Connexion par SIP | Información de Zoom / Enlace de Zoom / Número de la reunión / Código de acceso / Marcación rápida desde el móvil / Conexión por SIP | معلومات Zoom / رابط Zoom / رقم الاجتماع / رمز الدخول / الاتصال السريع من الهاتف المحمول / الانضمام عبر SIP |
 
 (The table reflects the choices made so far; the translated files themselves
 are authoritative — update this table when you change a term.)
