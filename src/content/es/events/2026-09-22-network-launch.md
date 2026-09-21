@@ -4,8 +4,6 @@ date: 2026-09-22
 time: "8:00–9:30 a. m. (Toronto) / 14:00 (Ámsterdam) / 22:00 (Sídney)"
 location: En línea (Zoom)
 online: true
-link: "https://yorku.zoom.us/j/92975099397?pwd=rhJmgxHZXfINlb9Uie6bP5brvFZCg1.1"
-summary: La AJRRN (Red de Investigación sobre Justicia Algorítmica para Personas Refugiadas) es un proyecto de siete años financiado por el SSHRC y alojado en el Refugee Law Lab, que reúne a instituciones académicas y organizaciones comunitarias de todo el mundo para explorar las intersecciones entre la tecnología y el derecho migratorio.
 ---
 La AJRRN (Red de Investigación sobre Justicia Algorítmica para Personas Refugiadas) es un proyecto de siete años financiado por el SSHRC y alojado en el Refugee Law Lab, que reúne a instituciones académicas y organizaciones comunitarias de todo el mundo para explorar las intersecciones entre la tecnología y el derecho migratorio.
 
