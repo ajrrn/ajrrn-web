@@ -10,7 +10,7 @@ summary: L'AJRRN (Réseau de recherche sur la justice algorithmique pour les per
 L'AJRRN (Réseau de recherche sur la justice algorithmique pour les personnes réfugiées) est un projet de sept ans financé par le CRSH et hébergé au Refugee Law Lab, qui réunit des établissements universitaires et des organismes communautaires du monde entier pour explorer les intersections entre la technologie et le droit des migrations.
 
 **Quand :** le mardi 22 septembre 2026, de 8 h à 9 h 30 (Toronto) / 14 h (Amsterdam) / 22 h (Sydney).
-**Où :** en ligne, sur Zoom.
+**Où :** en ligne, sur [Zoom](https://yorku.zoom.us/j/92975099397?pwd=rhJmgxHZXfINlb9Uie6bP5brvFZCg1.1).
 
 Le lancement présentera le réseau, ses partenaires et ses deux domaines de recherche, et expliquera comment les chercheuses et chercheurs, les organismes communautaires et les personnes ayant vécu le déplacement peuvent y participer.
 
