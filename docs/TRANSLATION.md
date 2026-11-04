@@ -85,7 +85,7 @@ Rules for anyone (human or AI) translating:
 | Host address | Adresse de l'hôte | Dirección de la institución anfitriona | عنوان الجهة المضيفة |
 | Town hall (open meeting) | Assemblée publique | Asamblea abierta | لقاء مفتوح |
 | Global Majority / Global North | Majorité mondiale / Nord global | Mayoría Global / Norte Global | الأغلبية العالمية / الشمال العالمي |
-| Graduate Project Competition | concours de projets d’études supérieures | Concurso de Proyectos de Posgrado | مسابقة مشاريع الدراسات العليا |
+| $10K Graduate Research Contracts | contrats de recherche de 10 000 $ aux cycles supérieurs | contratos de investigación de posgrado de 10 000 CAD | عقود بحثية لطلاب الدراسات العليا بقيمة 10,000 دولار |
 | working paper | document de travail | documento de trabajo | ورقة عمل |
 | (academic) supervisor | directrice ou directeur (académique) | supervisor/a (académico/a) | المشرف (الأكاديمي) |
 

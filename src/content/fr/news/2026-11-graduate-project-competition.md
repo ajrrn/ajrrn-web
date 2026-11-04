@@ -1,5 +1,5 @@
 ---
-title: Ouverture des candidatures pour le concours de projets d’études supérieures de l’AJRRN
+title: "Candidatures ouvertes : contrats de recherche de 10 000 $ aux cycles supérieurs"
 date: 2026-11-04
 summary: Le réseau finance quatre projets de recherche menés par des étudiantes et étudiants des cycles supérieurs sur la technologie, les frontières et les droits des personnes réfugiées, à raison de 10 000 $ CA chacun. Date limite de candidature le 1er décembre 2026.
 ---

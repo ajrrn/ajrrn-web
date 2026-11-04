@@ -8,4 +8,4 @@ If you have found an error in a translated page, or an accessibility problem wit
 
 ## Email list
 
-Join the AJRRN email list to hear about our events, publications and opportunities: [sign up here](https://crs1.apps01.yorku.ca/machform/view.php?id=107285) (the sign‑up form is currently in English only).
+Join the AJRRN email list to hear about our events, publications and opportunities: [sign up here](https://cryptpad.fr/form/#/2/form/view/tNq6XzLXpg-lB-XSWexEGYjHKAmJvQfIYWArIeotvRg/) (the sign‑up form is currently in English only).

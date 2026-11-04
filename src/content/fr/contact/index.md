@@ -8,4 +8,4 @@ Si vous avez remarqué une erreur dans une page traduite, ou un problème d'acce
 
 ## Liste de diffusion
 
-Abonnez-vous à la liste de diffusion de l’AJRRN pour être informé·e de nos événements, publications et occasions : [inscrivez-vous ici](https://crs1.apps01.yorku.ca/machform/view.php?id=107285) (le formulaire d’inscription est pour l’instant en anglais seulement).
+Abonnez-vous à la liste de diffusion de l’AJRRN pour être informé·e de nos événements, publications et occasions : [inscrivez-vous ici](https://cryptpad.fr/form/#/2/form/view/tNq6XzLXpg-lB-XSWexEGYjHKAmJvQfIYWArIeotvRg/) (le formulaire d’inscription est pour l’instant en anglais seulement).

@@ -1,5 +1,5 @@
 ---
-title: Abierta la convocatoria del Concurso de Proyectos de Posgrado de la AJRRN
+title: Abierta la convocatoria de contratos de investigación de posgrado de 10 000 CAD
 date: 2026-11-04
 summary: La red financia cuatro proyectos de investigación dirigidos por estudiantes de posgrado sobre tecnología, fronteras y derechos de las personas refugiadas, con 10 000 CAD cada uno. La convocatoria cierra el 1 de diciembre de 2026.
 ---

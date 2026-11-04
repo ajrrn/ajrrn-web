@@ -1,8 +1,8 @@
 ---
-title: "دعوة لتقديم الطلبات: مسابقة مشاريع الدراسات العليا لشبكة AJRRN"
+title: "دعوة لتقديم الطلبات: عقود بحثية لطلاب الدراسات العليا بقيمة 10,000 دولار"
 date: 2026-11-04
 deadline: 2026-12-01
-category: study
+category: work
 location: أي مكان — في كندا أو خارجها
 link: https://cryptpad.fr/form/#/2/form/view/vSOcwx2LFfbz5siUqCrycIXMLh4CKXZgJL8GAY1VDtM/embed/
 link_label: التقديم عبر الإنترنت

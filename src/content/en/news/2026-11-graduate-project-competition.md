@@ -1,5 +1,5 @@
 ---
-title: Applications open for the AJRRN Graduate Project Competition
+title: Applications open for $10K Graduate Research Contracts
 date: 2026-11-04
 summary: The network is funding four graduate-led research projects on technology, borders and refugee rights, with $10,000 CAD for each. Applications close December 1, 2026.
 ---

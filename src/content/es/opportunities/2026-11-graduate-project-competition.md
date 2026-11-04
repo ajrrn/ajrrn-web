@@ -1,8 +1,8 @@
 ---
-title: "Convocatoria: Concurso de Proyectos de Posgrado de la AJRRN"
+title: "Convocatoria: contratos de investigación de posgrado de 10 000 CAD"
 date: 2026-11-04
 deadline: 2026-12-01
-category: study
+category: work
 location: Cualquier lugar — en Canadá o en el extranjero
 link: https://cryptpad.fr/form/#/2/form/view/vSOcwx2LFfbz5siUqCrycIXMLh4CKXZgJL8GAY1VDtM/embed/
 link_label: Postularse en línea
