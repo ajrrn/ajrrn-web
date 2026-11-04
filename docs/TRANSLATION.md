@@ -84,6 +84,10 @@ Rules for anyone (human or AI) translating:
 | Co-applicant / Collaborator (roles on the People page) | Cocandidat·e / Collaborateur·rice | Cosolicitante / Colaborador/a | مقدِّم/ة طلب مشارك/ة / متعاون/ة |
 | Host address | Adresse de l'hôte | Dirección de la institución anfitriona | عنوان الجهة المضيفة |
 | Town hall (open meeting) | Assemblée publique | Asamblea abierta | لقاء مفتوح |
+| Global Majority / Global North | Majorité mondiale / Nord global | Mayoría Global / Norte Global | الأغلبية العالمية / الشمال العالمي |
+| Graduate Project Competition | concours de projets d’études supérieures | Concurso de Proyectos de Posgrado | مسابقة مشاريع الدراسات العليا |
+| working paper | document de travail | documento de trabajo | ورقة عمل |
+| (academic) supervisor | directrice ou directeur (académique) | supervisor/a (académico/a) | المشرف (الأكاديمي) |
 
 (The table reflects the choices made so far; the translated files themselves
 are authoritative — update this table when you change a term.)
