@@ -8,4 +8,4 @@ Si ha encontrado un error en una página traducida o un problema de accesibilida
 
 ## Lista de correo
 
-Únase a la lista de correo de la AJRRN para recibir información sobre nuestros eventos, publicaciones y oportunidades: [inscríbase aquí](https://crs1.apps01.yorku.ca/machform/view.php?id=107285) (por ahora el formulario de inscripción está disponible solo en inglés).
+Únase a la lista de correo de la AJRRN para recibir información sobre nuestros eventos, publicaciones y oportunidades: [inscríbase aquí](https://cryptpad.fr/form/#/2/form/view/tNq6XzLXpg-lB-XSWexEGYjHKAmJvQfIYWArIeotvRg/) (por ahora el formulario de inscripción está disponible solo en inglés).
