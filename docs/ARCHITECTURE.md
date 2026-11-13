@@ -46,6 +46,11 @@ GitHub repo ──push──▶ Cloudflare Workers Builds
   The HTML output is otherwise identical — the folders are always `/<lang>/`.
   A transform in `eleventy.config.js` rewrites every root-relative `href`/`src`
   accordingly, so authors can always write `/about/` in markdown.
+- Links to other websites (an absolute http(s) URL whose host is not ajrrn.org
+  or a subdomain) open in a new tab: a second transform
+  (`src/_lib/external-links.js`) adds `target="_blank" rel="noopener"` to them
+  in every page, templates and markdown alike. Links within the site open in
+  the same tab.
 - People and partners are listed on their section pages and link outward
   (`link:`); a preprocessor in `eleventy.config.js` sets `permalink: false` on
   those items so they don't get pages of their own.

@@ -217,6 +217,9 @@ Change wording here, not in the templates.
 - Link to other pages of the site with language-root-relative paths:
   `[People](/people/)`. The build turns them into the correct address for the
   language and environment.
+- Links to other websites open in a new tab automatically; write them as plain
+  markdown links (`[Citizen Lab](https://citizenlab.ca/)`), with no HTML or
+  `target` attribute.
 - Put images and documents in `src/assets/img/` or `src/assets/docs/` and
   reference them as `/assets/img/file.png`. Give every image meaningful `alt`
   text: `![Description of the image](/assets/img/file.png)`.

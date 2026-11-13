@@ -2,6 +2,7 @@
 // See docs/ARCHITECTURE.md for an overview of how the pieces fit together.
 
 import site from "./src/_data/site.js";
+import { openExternalLinksInNewTab } from "./src/_lib/external-links.js";
 
 const LANGS = site.languages.map((l) => l.code);
 const LANG_RE = new RegExp(`^/(${LANGS.join("|")})(/|$)`);
@@ -162,6 +163,13 @@ export default function (eleventyConfig) {
       const withLang = LANG_RE.test(url) ? url : `/${lang}${url}`;
       return `${attr}="${hrefFor(withLang, lang)}"`;
     });
+  });
+
+  // Links that leave ajrrn.org open in a new tab (see src/_lib/external-links.js).
+  eleventyConfig.addTransform("external-links", function (content) {
+    const out = this.page?.outputPath || "";
+    if (typeof out !== "string" || !out.endsWith(".html")) return content;
+    return openExternalLinksInNewTab(content, site.domain);
   });
 
   // ---- Filters --------------------------------------------------------------
