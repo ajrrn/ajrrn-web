@@ -10,9 +10,9 @@ summary: "AJRRN Event Series, Webinar 01: three Migration and Technology Monitor
 **AJRRN Event Series — Webinar 01**
 
 **When:** Tuesday, November 24, 2026, 12:00–1:00 p.m. EST (Toronto) / 18:00–19:00 (Amsterdam).
-**Where:** Online, via [Zoom](https://yorku.zoom.us/j/95408573075?pwd=0IdIgNqjc1kn86hIMUG2OsIdtDusw0.1).
+**Where:** Online, via <a href="https://yorku.zoom.us/j/95408573075?pwd=0IdIgNqjc1kn86hIMUG2OsIdtDusw0.1" target="_blank" rel="noopener">Zoom</a>.
 
-What does it mean for people with lived experience of migration to drive the conversation on technology at the border? Join us for the AJRRN's first event series webinar with our partner, the [Migration and Technology Monitor](https://www.migrationtechmonitor.com/) (MTM), a global community of experts-on-the-move critiquing and developing the technologies used to manage migration.
+What does it mean for people with lived experience of migration to drive the conversation on technology at the border? Join us for the AJRRN's first event series webinar with our partner, the <a href="https://www.migrationtechmonitor.com/" target="_blank" rel="noopener">Migration and Technology Monitor</a> (MTM), a global community of experts-on-the-move critiquing and developing the technologies used to manage migration.
 
 ## Speakers
 
@@ -20,10 +20,10 @@ What does it mean for people with lived experience of migration to drive the con
 - **Grace Gichanga**, MTM 2024 Fellow — a lawyer and the founder of Wasafiri Foundation, a legal and psychosocial support hub for refugees, migrants and asylum seekers living in South Africa.
 - **Wael Qarssifi**, MTM 2023 Fellow — a journalist from Syria who has crossed many borders and is now living in Germany, investigating and exploring the human impacts of border surveillance.
 
-In conversation with [Petra Molnar](https://www.petramolnar.com/about), Associate Director, Refugee Law Lab.
+In conversation with <a href="https://www.petramolnar.com/about" target="_blank" rel="noopener">Petra Molnar</a>, Associate Director, Refugee Law Lab.
 
 This session is free and open to researchers, community organizations, and anyone interested in the intersection of migration and technology.
 
-[Join the webinar on Zoom](https://yorku.zoom.us/j/95408573075?pwd=0IdIgNqjc1kn86hIMUG2OsIdtDusw0.1)
+<a href="https://yorku.zoom.us/j/95408573075?pwd=0IdIgNqjc1kn86hIMUG2OsIdtDusw0.1" target="_blank" rel="noopener">Join the webinar on Zoom</a>
 
 ![Event flyer: “Nothing About Us Without Us”, Learnings with the Migration and Technology Monitor, Tuesday, November 24, 2026, 12:00 to 1:00 pm EST, online webinar, with photos of the speakers Aqila Abdelkarim Ali, Grace Gichanga and Wael Qarssifi, and Petra Molnar of the Refugee Law Lab.](/assets/img/2026-11-24-mtm-webinar-flyer.jpg)
